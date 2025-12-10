@@ -1,0 +1,95 @@
+
+@layer utilities {
+  .text-stroke-outline {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+  }
+
+  .text-stroke-outline-white {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+  }
+
+  .text-stroke-outline-thin {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+  }
+}
+
+/* Make Site Header template part sticky */
+header.wp-block-template-part.bb-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ------------------------------------------ */
+/* Footer Link Styling — Tailwind-like feel   */
+/* ------------------------------------------ */
+
+/* Base footer link */
+.wp-block-blackboard-by-zdc-footer a {
+  text-decoration: none !important;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+/* Active link – regular footer menu items
+   (exclude TranslatePress language switcher) */
+.wp-block-blackboard-by-zdc-footer li.current-menu-item:not(.trp-language-switcher-container) > a,
+.wp-block-blackboard-by-zdc-footer li.current_page_item:not(.trp-language-switcher-container) > a {
+  font-weight: 500; /* Tailwind font-medium */
+  color: #000;
+  text-decoration: none !important;
+}
+
+/* Hover state — includes both normal and active links */
+.wp-block-blackboard-by-zdc-footer a:hover,
+.wp-block-blackboard-by-zdc-footer li.current-menu-item > a:hover,
+.wp-block-blackboard-by-zdc-footer li.current_page_item > a:hover,
+.wp-block-blackboard-by-zdc-footer [aria-current="page"]:hover {
+  color: #000 !important;
+  font-weight: 500; /* Tailwind font-medium on hover */
+  text-decoration: none !important;
+}
+/* ------------------------------------------ */
+/* TranslatePress footer language switcher    */
+/* ------------------------------------------ */
+
+/* Base style for the language switcher links */
+#menu-footer-menu-3 .trp-language-switcher-container > a {
+  text-decoration: none !important;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+  font-weight: 300;   /* thin / default */
+  color: #000;
+}
+
+/* Hover state for all language items */
+#menu-footer-menu-3 .trp-language-switcher-container > a:hover {
+  font-weight: 500;
+  color: #000;
+  text-decoration: none !important;
+}
+
+/* ---------- ACTIVE STATE PER LANGUAGE ---------- */
+/* Adjust lang values (en-GB, es-ES, it-IT, etc.) to match your site */
+
+/* English active: menu-item-333 */
+html[lang^="en"] #menu-footer-menu-3 #menu-item-333 > a,
+html[lang^="en"] #menu-footer-menu-3 #menu-item-333 > a:hover {
+  font-weight: 500;
+  color: #000;
+}
+
+/* Spanish active: menu-item-334 */
+html[lang^="es"] #menu-footer-menu-3 #menu-item-334 > a,
+html[lang^="es"] #menu-footer-menu-3 #menu-item-334 > a:hover {
+  font-weight: 500;
+  color: #000;
+}
+
+/* Italian active: menu-item-310 */
+html[lang^="it"] #menu-footer-menu-3 #menu-item-310 > a,
+html[lang^="it"] #menu-footer-menu-3 #menu-item-310 > a:hover {
+  font-weight: 500;
+  color: #000;
+}

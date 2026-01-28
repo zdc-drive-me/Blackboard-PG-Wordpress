@@ -163,10 +163,10 @@ if ( ! function_exists( 'blackboard_by_zdc_enqueue_scripts' ) ) :
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'blackboard_by_zdc-tailwind' );
-    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.21', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.38', 'all');
 
     wp_deregister_style( 'blackboard_by_zdc-style' );
-    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.21', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.38', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
@@ -199,6 +199,7 @@ function blackboard_by_zdc_blocks_init() {
     require_once 'blocks/footer/footer_register.php';
     require_once 'blocks/header-alt/header-alt_register.php';
     require_once 'blocks/privacy-policy-block/privacy-policy-block_register.php';
+    require_once 'blocks/services/services_register.php';
 
     /* Pinegrow generated Register Pinegrow Blocks End */
 }
@@ -262,6 +263,11 @@ function blackboard_by_zdc_register_blocks_categories( $categories ) {
 $categories = array_merge( $categories, array( array(
         'slug' => 'inner_pages_blocks',
         'title' => __( 'General Pages Blocks', 'blackboard_by_zdc' )
+    ) ) );
+
+$categories = array_merge( $categories, array( array(
+        'slug' => 'inner_pages_blocks',
+        'title' => __( 'Service Blocks', 'blackboard_by_zdc' )
     ) ) );
 
 $categories = array_merge( $categories, array( array(

@@ -49,7 +49,8 @@
                 </div>
             </div>
             <!-- Grid container with 3 columns -->
-            <div class="mb-10 mt-10"><a href="<?php echo esc_url( home_url() ); ?>"><?php if ( !PG_Blocks_v4::getImageSVG( $args, 'logo_image', false) && PG_Blocks_v4::getImageUrl( $args, 'logo_image', 'full' ) ) : ?><img width="100%" src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'logo_image', 'full' ) ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'logo_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'logo_image', 'id', true)) : '') ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'logo_image', 'alt', true); ?>"><?php endif; ?><?php if ( PG_Blocks_v4::getImageSVG( $args, 'logo_image', false) ) : ?><?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'logo_image' ), array() ) ?><?php endif; ?></a>
+            <div class="mb-10 mt-10">
+                <a href="<?php echo esc_url( home_url() ); ?>"><?php if ( !PG_Blocks_v4::getImageSVG( $args, 'logo_image', false) && PG_Blocks_v4::getImageUrl( $args, 'logo_image', 'full' ) ) : ?><img width="100%" src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'logo_image', 'full' ) ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'logo_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'logo_image', 'id', true)) : '') ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'logo_image', 'alt', true); ?>"><?php endif; ?><?php if ( PG_Blocks_v4::getImageSVG( $args, 'logo_image', false) ) : ?><?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'logo_image' ), array() ) ?><?php endif; ?></a>
             </div>
             <!-- Copyright section -->
             <div class="grid grid-cols-2 gap-x-4">

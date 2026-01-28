@@ -1,0 +1,440 @@
+<!DOCTYPE html> 
+<html lang="en" wp-template> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>New page</title>         
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    </head>     
+    <body>
+        <main>
+            <section class="min-h-screen min-w-0" cms-block-name="zdc-services-packages" cms-block-align="full" cms-block-mode="preview" cms-block-keywords="services,packages,workflow,hosting,care" cms-block-category-custom-register-name="Service Blocks" cms-block-category-custom-register="true" cms-block-category-custom="inner_pages_blocks" cms-block-category="custom" cms-block-icon="layout" cms-block-description="Services overview with packages, workflow, and hosting & care plans." cms-block-title="Services & Packages" cms-block="services">
+                <div class="grid grid-cols-1 min-w-0 gap-4 md:gap-8 pl-4 pr-4 md:grid-cols-12 md:pl-6 md:pr-6">
+                    <!-- Sidebar -->
+                    <aside class="col-span-12 min-w-0 self-start top-[9vh] md:col-span-3 md:sticky" aria-labelledby="sidebar-heading">
+                        <div>
+                            <section class="mb-6" aria-labelledby="about-us-heading">
+                                <div class="border-solid">
+                                    <div class="flex justify-between items-center md:block">
+                                        <h3 id="about-us-heading" class="flex font-semibold gap-2 items-center text-xs uppercase" cms-block-field="about_heading" cms-block-field-type="content" cms-block-field-title="About Heading">
+                About <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> </h3>
+                                        <!-- Clock for mobile - visible only on small screens -->
+                                        <div class="md:hidden flex justify-end min-w-0 flex-shrink-0">
+                                            <h3 id="dynamic-date-mobile" class="flex font-semibold gap-1 items-center justify-end text-xs uppercase whitespace-nowrap"> <span id="date-display-mobile" class="font-sans text-right flex items-center gap-1"> <span id="date-text-mobile" class="font-sans"></span> <span>•</span> <span id="time-text-mobile" class="font-mono tabular-nums"></span> </span> </h3>
+                                        </div>
+                                    </div>
+                                    <div class="bg-custom_pink-200 mt-6 p-2.5">
+                                        <h1 class="font-bold mb-6 text-4xl" cms-block-field="sidebar_h1" cms-block-field-type="content" cms-block-field-title="Sidebar H1">
+                CUSTOM WEB DESING &amp; CODING </h1>
+                                        <h2 class="font-thin mb-6 text-sm" cms-block-field="sidebar_intro" cms-block-field-type="content" cms-block-field-title="Sidebar Intro" cms-block-field-control="richtext">
+                Blackboard is a <b>creative digital services boutique</b>. </h2>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_p1" cms-block-field-type="content" cms-block-field-title="Sidebar Paragraph 1" cms-block-field-control="richtext">
+                We specialise in helping <b>fashion brands, premium companies and artistic ventures</b>
+                turn ideas into a tailor-made online presence – considered, functional and beautifully built. </p>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_p2" cms-block-field-type="content" cms-block-field-title="Sidebar Paragraph 2" cms-block-field-control="richtext">
+                By combining <span class="font-normal">design, technology and strategy</span>, we develop digital
+                platforms that grow from a vision, intuition or necessity into a fully realised online presence. </p>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_p3" cms-block-field-type="content" cms-block-field-title="Sidebar Paragraph 3" cms-block-field-control="richtext">
+                Backed by 10+ years of hands-on experience, we work at the intersection of precision and creativity. </p>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_clients" cms-block-field-type="content" cms-block-field-title="Sidebar Clients" cms-block-field-control="richtext">
+                Selected clients: Bradley Seymour, Dune Studios, Marzotto Group, WP Lavori in Corso,
+                Colombo &amp; Partners, TimeSwapp, Waldorf School of Milan. </p>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_parent" cms-block-field-type="content" cms-block-field-title="Sidebar Parent Line" cms-block-field-control="richtext">
+                Blackboard is the digital arm of <a href="https://zdcstudio.com" target="_blank" class="!no-underline"><b>zdc.studio</b></a>. </p>
+                                        <p class="mb-6 text-sm" cms-block-field="sidebar_location" cms-block-field-type="content" cms-block-field-title="Sidebar Location" cms-block-field-control="richtext">
+                Based in Milan, partnering with clients across the globe. </p>
+                                        <p class="mb-0 text-sm" cms-block-field="sidebar_contact_line" cms-block-field-type="content" cms-block-field-title="Sidebar Contact Line" cms-block-field-control="richtext">
+                For enquiries, write us <a href="mailto:blackboard@zdcstudio.com?subject=Project%20enquiry" class="!no-underline"> <span class="font-normal">here</span> </a>. </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                    <!-- Main Content -->
+                    <div id="main-content" class="col-span-12 min-w-0 md:col-span-9">
+                        <!-- Section label + clock -->
+                        <div class="hidden md:flex justify-between items-start gap-2 min-w-0">
+                            <h2 class="flex font-semibold gap-2 items-center text-xs uppercase min-w-0" cms-block-field="top_label" cms-block-field-type="content" cms-block-field-title="Top Label">
+          Services <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> </h2>
+                            <div class="flex justify-end min-w-0 flex-shrink-0">
+                                <h3 id="dynamic-date" class="flex font-semibold gap-1 items-center justify-end text-xs uppercase whitespace-nowrap"> <span id="date-display" class="font-sans text-right flex items-center gap-1"> <span id="date-text" class="font-sans"></span> <span>•</span> <span id="time-text" class="font-mono tabular-nums"></span> </span> </h3>
+                            </div>
+                        </div>
+                        <!-- Hero intro + image -->
+                        <div class="gap-4 grid items-center max-w-6xl mt-8 mx-auto md:gap-6 lg:gap-6 md:grid-cols-[minmax(0,2fr),minmax(0,1.4fr)]">
+                            <div>
+                                <h5 class="font-bold mb-3 text-4xl uppercase md:text-4xl" cms-block-field="hero_title" cms-block-field-type="content" cms-block-field-title="Hero Title">Websites plans</h5>
+                                <p class="text-sm text-gray-800" cms-block-field="hero_text" cms-block-field-type="content" cms-block-field-title="Hero Text" cms-block-field-control="richtext">
+            The shape of the site changes depending on the plan, but the foundation stays the same:
+            a clear content structure, a custom visual system and a lean WordPress build. </p>
+                            </div>
+                            <figure class="bg-white/60 border border-gray-200 hidden overflow-hidden rounded-md md:block">
+                                <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80" alt="Design and development workspace with sketches and laptop" class="h-60 object-cover w-full" cms-block-field="hero_image" cms-block-field-type="image" cms-block-field-title="Hero Image"/>
+                                <figcaption class="p-3 text-xs text-gray-700" cms-block-field="hero_caption" cms-block-field-type="content" cms-block-field-title="Hero Caption" cms-block-field-control="richtext">
+                                    <blockquote>
+                                        A lean WordPress stack (Kadence + Pinegrow) tuned for structure, speed and scalability.
+                                        Don&apos;t trust your site in 3 years.
+</blockquote>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Website packages: Starting / Grow / Pro -->
+                        <div class="gap-6 grid grid-cols-1 mt-8 pb-0 md:grid-cols-3">
+                            <!-- Starting -->
+                            <div class="flex flex-col">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="pkg1_title" cms-block-field-type="content" cms-block-field-title="Package 1 Title">Starting</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div>
+                                        <span class="font-normal">Price:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_price" cms-block-field-type="content" cms-block-field-title="Pkg1 Price">From €3,200</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Description:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_desc" cms-block-field-type="content" cms-block-field-title="Pkg1 Description">Premium starter presence</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div>
+                                        <span class="font-normal">Pages:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_pages" cms-block-field-type="content" cms-block-field-title="Pkg1 Pages">Up to 5</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Design:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_design" cms-block-field-type="content" cms-block-field-title="Pkg1 Design">Custom layout &amp; style</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Contact forms:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_forms" cms-block-field-type="content" cms-block-field-title="Pkg1 Contact Forms">1 standard form</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Blog:</span>
+                                        <span class="font-thin" cms-block-field="pkg1_blog" cms-block-field-type="content" cms-block-field-title="Pkg1 Blog">—</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Newsletter:</span>
+                                        <span class="font-thin" cms-block-field="pkg1_newsletter" cms-block-field-type="content" cms-block-field-title="Pkg1 Newsletter">—</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">SEO:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_seo" cms-block-field-type="content" cms-block-field-title="Pkg1 SEO">Basic / core SEO setup</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Performance:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_perf" cms-block-field-type="content" cms-block-field-title="Pkg1 Performance">Core optimisations</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Analytics:</span>
+                                        <span class="font-thin" cms-block-field="pkg1_analytics" cms-block-field-type="content" cms-block-field-title="Pkg1 Analytics">—</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Accessibility:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_access" cms-block-field-type="content" cms-block-field-title="Pkg1 Accessibility">Best practices</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div>
+                                        <span class="font-normal">Hosting &amp; Care:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg1_care" cms-block-field-type="content" cms-block-field-title="Pkg1 Hosting & Care" cms-block-field-control="richtext">
+                Host anywhere you like – add a maintenance plan and hosting is included. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Grow -->
+                            <div class="flex flex-col" cms-block-field="pkg2_featured" cms-block-field-title="Package 2 Featured" cms-block-field-type="none" cms-block-field-control="toggle" cms-block-field-default-value="true" cms-block-field-value="true">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="pkg2_title" cms-block-field-type="content" cms-block-field-title="Package 2 Title">Grow</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> <span class="border border-black ml-2 px-2 py-0.5 rounded-md text-[10px] tracking-wide uppercase" cms-block-condition="pkg2_featured" cms-block-condition-value="true" cms-block-field="pkg2_badge" cms-block-field-type="content" cms-block-field-title="Package 2 Badge Text">Most popular</span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div>
+                                        <span class="font-normal">Price:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg2_price" cms-block-field-type="content" cms-block-field-title="Pkg2 Price">From €4,100</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Description:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg2_desc" cms-block-field-type="content" cms-block-field-title="Pkg2 Description">Structured, content-driven site</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div><span class="font-normal">Pages:</span> <span class="font-thin" cms-block-field="pkg2_pages" cms-block-field-type="content" cms-block-field-title="Pkg2 Pages">Up to 10</span>
+                                    </div>
+                                    <div><span class="font-normal">Design:</span> <span class="font-thin" cms-block-field="pkg2_design" cms-block-field-type="content" cms-block-field-title="Pkg2 Design">Content-driven page design &amp; layout</span>
+                                    </div>
+                                    <div><span class="font-normal">Contact forms:</span> <span class="font-thin" cms-block-field="pkg2_forms" cms-block-field-type="content" cms-block-field-title="Pkg2 Contact Forms">Advanced logic + blog-ready forms</span>
+                                    </div>
+                                    <div><span class="font-normal">Blog:</span> <span class="font-thin" cms-block-field="pkg2_blog" cms-block-field-type="content" cms-block-field-title="Pkg2 Blog">Setup + layout</span>
+                                    </div>
+                                    <div><span class="font-normal">Newsletter:</span> <span class="font-thin" cms-block-field="pkg2_newsletter" cms-block-field-type="content" cms-block-field-title="Pkg2 Newsletter">Basic (Mailchimp)</span>
+                                    </div>
+                                    <div><span class="font-normal">SEO:</span> <span class="font-thin" cms-block-field="pkg2_seo" cms-block-field-type="content" cms-block-field-title="Pkg2 SEO">Thoughtful on-page SEO</span>
+                                    </div>
+                                    <div><span class="font-normal">Performance:</span> <span class="font-thin" cms-block-field="pkg2_perf" cms-block-field-type="content" cms-block-field-title="Pkg2 Performance">Caching &amp; delivery</span>
+                                    </div>
+                                    <div><span class="font-normal">Analytics:</span> <span class="font-thin" cms-block-field="pkg2_analytics" cms-block-field-type="content" cms-block-field-title="Pkg2 Analytics">GA4</span>
+                                    </div>
+                                    <div><span class="font-normal">Accessibility:</span> <span class="font-thin" cms-block-field="pkg2_access" cms-block-field-type="content" cms-block-field-title="Pkg2 Accessibility">AA-focused</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div>
+                                        <span class="font-normal">Hosting &amp; Care:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg2_care" cms-block-field-type="content" cms-block-field-title="Pkg2 Hosting & Care" cms-block-field-control="richtext">
+                Host anywhere you like – add a maintenance plan and hosting is included. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pro -->
+                            <div class="flex flex-col">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="pkg3_title" cms-block-field-type="content" cms-block-field-title="Package 3 Title">Pro</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div>
+                                        <span class="font-normal">Price:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg3_price" cms-block-field-type="content" cms-block-field-title="Pkg3 Price">From €6,300</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-normal">Description:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg3_desc" cms-block-field-type="content" cms-block-field-title="Pkg3 Description">Shopify store &amp; custom builds</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div><span class="font-normal">Pages:</span> <span class="font-thin" cms-block-field="pkg3_pages" cms-block-field-type="content" cms-block-field-title="Pkg3 Pages">12+ or custom scope</span>
+                                    </div>
+                                    <div><span class="font-normal">Design:</span> <span class="font-thin" cms-block-field="pkg3_design" cms-block-field-type="content" cms-block-field-title="Pkg3 Design">Bespoke theme (Kadence/Pinegrow)</span>
+                                    </div>
+                                    <div><span class="font-normal">Contact forms:</span> <span class="font-thin" cms-block-field="pkg3_forms" cms-block-field-type="content" cms-block-field-title="Pkg3 Contact Forms">Conditional forms &amp; integrations</span>
+                                    </div>
+                                    <div><span class="font-normal">Blog:</span> <span class="font-thin" cms-block-field="pkg3_blog" cms-block-field-type="content" cms-block-field-title="Pkg3 Blog">Extended features + SEO structure</span>
+                                    </div>
+                                    <div><span class="font-normal">Newsletter:</span> <span class="font-thin" cms-block-field="pkg3_newsletter" cms-block-field-type="content" cms-block-field-title="Pkg3 Newsletter">Automation-ready</span>
+                                    </div>
+                                    <div><span class="font-normal">SEO:</span> <span class="font-thin" cms-block-field="pkg3_seo" cms-block-field-type="content" cms-block-field-title="Pkg3 SEO">Structured data + technical SEO audit</span>
+                                    </div>
+                                    <div><span class="font-normal">Performance:</span> <span class="font-thin" cms-block-field="pkg3_perf" cms-block-field-type="content" cms-block-field-title="Pkg3 Performance">Full-stack + CDN configuration</span>
+                                    </div>
+                                    <div><span class="font-normal">Analytics:</span> <span class="font-thin" cms-block-field="pkg3_analytics" cms-block-field-type="content" cms-block-field-title="Pkg3 Analytics">GA4 + events</span>
+                                    </div>
+                                    <div><span class="font-normal">Accessibility:</span> <span class="font-thin" cms-block-field="pkg3_access" cms-block-field-type="content" cms-block-field-title="Pkg3 Accessibility">AA+ review</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div>
+                                        <span class="font-normal">Hosting &amp; Care:&nbsp;</span>
+                                        <span class="font-thin" cms-block-field="pkg3_care" cms-block-field-type="content" cms-block-field-title="Pkg3 Hosting & Care" cms-block-field-control="richtext">
+                Host anywhere you like – add a maintenance plan and hosting is included. </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Workflow -->
+                        <section class="mt-12">
+                            <div class="mb-4">
+                                <h2 class="flex font-semibold gap-2 items-center text-xs uppercase min-w-0" cms-block-field="workflow_title" cms-block-field-type="content" cms-block-field-title="Workflow Title">
+            How we work - workflow <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> </h2>
+                                <p class="mt-2 text-sm text-gray-800" cms-block-field="workflow_intro" cms-block-field-type="content" cms-block-field-title="Workflow Intro" cms-block-field-control="richtext">
+            Every plan starts with a content and structure review, custom layouts and a lean, modern WordPress build. </p>
+                            </div>
+                            <div class="space-y-6 text-sm text-gray-800">
+                                <!-- 01 -->
+                                <div class="bg-white/60 border border-gray-200 p-4 rounded-md md:p-5">
+                                    <div class="flex items-baseline justify-between gap-2">
+                                        <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span cms-block-field="wf1_title" cms-block-field-type="content" cms-block-field-title="WF1 Title">01 — Discovery</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                        <span class="text-[11px] text-gray-600 uppercase" cms-block-field="wf1_tagline" cms-block-field-type="content" cms-block-field-title="WF1 Tagline">Intent, audience, constraints</span>
+                                    </div>
+                                    <p class="mt-3 text-gray-800" cms-block-field="wf1_body" cms-block-field-type="content" cms-block-field-title="WF1 Body" cms-block-field-control="richtext">
+              We map goals, content and guardrails, then set a lean, realistic scope that matches your resources and timeline. </p>
+                                    <div class="mt-3">
+                                        <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-1" cms-block-field="wf1_focus_title" cms-block-field-type="content" cms-block-field-title="WF1 Focus Title">
+                Detailed focus: Content &amp; structure </h4>
+                                        <div cms-block-field="wf1_focus_list" cms-block-field-type="content" cms-block-field-title="WF1 Focus List (HTML)" cms-block-field-control="richtext">
+                                            <ul class="list-disc pl-5 space-y-1 text-gray-800">
+                                                <li>Content and page mapping before design</li>
+                                                <li>Navigation and hierarchy that match your project</li>
+                                                <li>Wireframes / low-fidelity layouts where needed</li>
+                                                <li>Simple content guidelines (tone, length, image ratios)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 02 -->
+                                <div class="bg-white/60 border border-gray-200 p-4 rounded-md md:p-5">
+                                    <div class="flex items-baseline justify-between gap-2">
+                                        <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span cms-block-field="wf2_title" cms-block-field-type="content" cms-block-field-title="WF2 Title">02 — Design</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                        <span class="text-[11px] uppercase tracking-[0.16em] text-gray-600" cms-block-field="wf2_tagline" cms-block-field-type="content" cms-block-field-title="WF2 Tagline">System &amp; composition</span>
+                                    </div>
+                                    <p class="mt-3 text-gray-800" cms-block-field="wf2_body" cms-block-field-type="content" cms-block-field-title="WF2 Body" cms-block-field-control="richtext">
+              Grid, type, components. Editorial clarity over noise, with layouts tuned to your photography and visual language. </p>
+                                    <div class="mt-3">
+                                        <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-1" cms-block-field="wf2_focus_title" cms-block-field-type="content" cms-block-field-title="WF2 Focus Title">
+                Detailed focus: Design &amp; front-end </h4>
+                                        <div cms-block-field="wf2_focus_list" cms-block-field-type="content" cms-block-field-title="WF2 Focus List (HTML)" cms-block-field-control="richtext">
+                                            <ul class="list-disc pl-5 space-y-1 text-gray-800">
+                                                <li>Custom layout and type system (no generic theme skins)</li>
+                                                <li>Responsive grids, balanced margins and rhythm</li>
+                                                <li>Gentle motion where it helps pacing (no circus)</li>
+                                                <li>Design tuned to your existing brand assets and photography</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 03 -->
+                                <div class="bg-white/60 border border-gray-200 p-4 rounded-md md:p-5">
+                                    <div class="flex items-baseline justify-between gap-2">
+                                        <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span cms-block-field="wf3_title" cms-block-field-type="content" cms-block-field-title="WF3 Title">03 — Build</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                        <span class="text-[11px] uppercase tracking-[0.16em] text-gray-600" cms-block-field="wf3_tagline" cms-block-field-type="content" cms-block-field-title="WF3 Tagline">From prototype to live site</span>
+                                    </div>
+                                    <p class="mt-3 text-gray-800" cms-block-field="wf3_body" cms-block-field-type="content" cms-block-field-title="WF3 Body" cms-block-field-control="richtext">
+              We build a custom theme with the right tools for your project (Pinegrow, Kadence, block editor),
+              keeping the stack lean and documented. </p>
+                                    <div class="mt-3">
+                                        <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-1" cms-block-field="wf3_focus_title" cms-block-field-type="content" cms-block-field-title="WF3 Focus Title">
+                Detailed focus: Build &amp; handover </h4>
+                                        <div cms-block-field="wf3_focus_list" cms-block-field-type="content" cms-block-field-title="WF3 Focus List (HTML)" cms-block-field-control="richtext">
+                                            <ul class="list-disc pl-5 space-y-1 text-gray-800">
+                                                <li>Modern block-based WordPress build (Kadence + custom blocks)</li>
+                                                <li>Performance-minded decisions (caching, images, fonts)</li>
+                                                <li>Basic SEO and analytics setup</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 04 -->
+                                <div class="bg-white/60 border border-gray-200 p-4 rounded-md md:p-5">
+                                    <div class="flex items-baseline justify-between gap-2">
+                                        <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span cms-block-field="wf4_title" cms-block-field-type="content" cms-block-field-title="WF4 Title">04 — Launch &amp; care</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
+                                        <span class="text-[11px] uppercase tracking-[0.16em] text-gray-600" cms-block-field="wf4_tagline" cms-block-field-type="content" cms-block-field-title="WF4 Tagline">Deploy, optimise, support</span>
+                                    </div>
+                                    <p class="mt-3 text-gray-800" cms-block-field="wf4_body" cms-block-field-type="content" cms-block-field-title="WF4 Body" cms-block-field-control="richtext">
+              We launch, run basic performance and analytics passes, and—if you want us on call—plug you into
+              a care plan with hosting, updates and strategic time. </p>
+                                    <div class="mt-3">
+                                        <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-1" cms-block-field="wf4_focus_title" cms-block-field-type="content" cms-block-field-title="WF4 Focus Title">
+                Detailed focus: Launch &amp; support </h4>
+                                        <div cms-block-field="wf4_focus_list" cms-block-field-type="content" cms-block-field-title="WF4 Focus List (HTML)" cms-block-field-control="richtext">
+                                            <ul class="list-disc pl-5 space-y-1 text-gray-800">
+                                                <li>Handover session so you can update comfortably</li>
+                                                <li>Short, practical documentation (no 40-page PDF)</li>
+                                                <li>Optional ongoing care plans with hosting included</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Hosting + Care intro -->
+                        <div class="md:mt-10">
+                            <h5 class="font-bold mb-3 text-4xl uppercase md:text-4xl" cms-block-field="hosting_title" cms-block-field-type="content" cms-block-field-title="Hosting Title">
+          hosting + care </h5>
+                            <p class="mt-2 text-sm text-gray-800" cms-block-field="hosting_intro" cms-block-field-type="content" cms-block-field-title="Hosting Intro" cms-block-field-control="richtext">
+          Our maintenance plans include fast, secure managed WordPress hosting
+          via our trusted partners SiteGround and Hostinger – so hosting, updates and monitoring all sit under one team.
+          Hosting + Care are optional and work best when we migrate your site to our managed stack, so you can worry about one less thing. </p>
+                        </div>
+                        <!-- Care plans -->
+                        <div class="gap-6 grid grid-cols-1 mt-8 pb-0 md:grid-cols-3">
+                            <!-- Essential Care -->
+                            <div class="flex flex-col">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="care1_title" cms-block-field-type="content" cms-block-field-title="Care 1 Title">Essential Care</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div><span class="font-normal">Price:</span> <span class="font-thin" cms-block-field="care1_price" cms-block-field-type="content" cms-block-field-title="Care1 Price">From €70 / month</span>
+                                    </div>
+                                    <div><span class="font-normal">Best for:</span> <span class="font-thin" cms-block-field="care1_best" cms-block-field-type="content" cms-block-field-title="Care1 Best For">Small brochure / portfolio sites</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div><span class="font-normal">Hosting:</span> <span class="font-thin" cms-block-field="care1_hosting" cms-block-field-type="content" cms-block-field-title="Care1 Hosting">Included – managed on our EU-based SiteGround / Hostinger servers</span>
+                                    </div>
+                                    <div><span class="font-normal">Updates:</span> <span class="font-thin" cms-block-field="care1_updates" cms-block-field-type="content" cms-block-field-title="Care1 Updates">Monthly WordPress core &amp; plugin updates</span>
+                                    </div>
+                                    <div><span class="font-normal">Backups:</span> <span class="font-thin" cms-block-field="care1_backups" cms-block-field-type="content" cms-block-field-title="Care1 Backups">Daily backups with 30-day retention</span>
+                                    </div>
+                                    <div><span class="font-normal">Security:</span> <span class="font-thin" cms-block-field="care1_security" cms-block-field-type="content" cms-block-field-title="Care1 Security">Firewall + malware scans</span>
+                                    </div>
+                                    <div><span class="font-normal">Performance:</span> <span class="font-thin" cms-block-field="care1_perf" cms-block-field-type="content" cms-block-field-title="Care1 Performance">Core performance checks &amp; cache tuning</span>
+                                    </div>
+                                    <div><span class="font-normal">Support:</span> <span class="font-thin" cms-block-field="care1_support" cms-block-field-type="content" cms-block-field-title="Care1 Support">Email support + 1 small content tweak / month</span>
+                                    </div>
+                                    <div><span class="font-normal">Consultation:</span> <span class="font-thin" cms-block-field="care1_consult" cms-block-field-type="content" cms-block-field-title="Care1 Consultation">1× 60 min strategic check-in per year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Growth Care -->
+                            <div class="flex flex-col" cms-block-field="care2_featured" cms-block-field-title="Care 2 Featured" cms-block-field-type="none" cms-block-field-control="toggle" cms-block-field-default-value="true" cms-block-field-value="true">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="care2_title" cms-block-field-type="content" cms-block-field-title="Care 2 Title">Growth Care</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> <span class="border border-black ml-2 px-2 py-0.5 rounded-md text-[10px] tracking-wide uppercase" cms-block-condition="care2_featured" cms-block-condition-value="true" cms-block-field="care2_badge" cms-block-field-type="content" cms-block-field-title="Care 2 Badge Text">Most popular</span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div><span class="font-normal">Price:</span> <span class="font-thin" cms-block-field="care2_price" cms-block-field-type="content" cms-block-field-title="Care2 Price">From €130 / month</span>
+                                    </div>
+                                    <div><span class="font-normal">Best for:</span> <span class="font-thin" cms-block-field="care2_best" cms-block-field-type="content" cms-block-field-title="Care2 Best For">Growing content sites &amp; active blogs</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div><span class="font-normal">Hosting:</span> <span class="font-thin" cms-block-field="care2_hosting" cms-block-field-type="content" cms-block-field-title="Care2 Hosting">Included – managed hosting + staging environment (SiteGround / Hostinger)</span>
+                                    </div>
+                                    <div><span class="font-normal">Updates:</span> <span class="font-thin" cms-block-field="care2_updates" cms-block-field-type="content" cms-block-field-title="Care2 Updates">Weekly core, theme &amp; plugin updates</span>
+                                    </div>
+                                    <div><span class="font-normal">Backups:</span> <span class="font-thin" cms-block-field="care2_backups" cms-block-field-type="content" cms-block-field-title="Care2 Backups">Twice-daily backups with 60-day retention</span>
+                                    </div>
+                                    <div><span class="font-normal">Security:</span> <span class="font-thin" cms-block-field="care2_security" cms-block-field-type="content" cms-block-field-title="Care2 Security">Advanced firewall, uptime monitoring &amp; alerts</span>
+                                    </div>
+                                    <div><span class="font-normal">Performance:</span> <span class="font-thin" cms-block-field="care2_perf" cms-block-field-type="content" cms-block-field-title="Care2 Performance">Caching, image optimisation &amp; CDN guidance</span>
+                                    </div>
+                                    <div><span class="font-normal">Support:</span> <span class="font-thin" cms-block-field="care2_support" cms-block-field-type="content" cms-block-field-title="Care2 Support">Email support + up to 3 small tasks / month</span>
+                                    </div>
+                                    <div><span class="font-normal">Consultation:</span> <span class="font-thin" cms-block-field="care2_consult" cms-block-field-type="content" cms-block-field-title="Care2 Consultation">2× 60 min growth &amp; UX sessions per year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pro Care -->
+                            <div class="flex flex-col">
+                                <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span cms-block-field="care3_title" cms-block-field-type="content" cms-block-field-title="Care 3 Title">Pro Care</span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span> </h3>
+                                <div class="space-y-2 text-sm">
+                                    <div><span class="font-normal">Price:</span> <span class="font-thin" cms-block-field="care3_price" cms-block-field-type="content" cms-block-field-title="Care3 Price">From €220 / month</span>
+                                    </div>
+                                    <div><span class="font-normal">Best for:</span> <span class="font-thin" cms-block-field="care3_best" cms-block-field-type="content" cms-block-field-title="Care3 Best For">E-commerce &amp; mission-critical sites</span>
+                                    </div>
+                                    <hr class="border-t border-black/10 my-2">
+                                    <div><span class="font-normal">Hosting:</span> <span class="font-thin" cms-block-field="care3_hosting" cms-block-field-type="content" cms-block-field-title="Care3 Hosting">Included – high-availability hosting + CDN (SiteGround / Hostinger)</span>
+                                    </div>
+                                    <div><span class="font-normal">Updates:</span> <span class="font-thin" cms-block-field="care3_updates" cms-block-field-type="content" cms-block-field-title="Care3 Updates">Weekly updates with compatibility checks</span>
+                                    </div>
+                                    <div><span class="font-normal">Backups:</span> <span class="font-thin" cms-block-field="care3_backups" cms-block-field-type="content" cms-block-field-title="Care3 Backups">Frequent backups with 90-day retention</span>
+                                    </div>
+                                    <div><span class="font-normal">Security:</span> <span class="font-thin" cms-block-field="care3_security" cms-block-field-type="content" cms-block-field-title="Care3 Security">Extended monitoring &amp; hardening, priority alerts</span>
+                                    </div>
+                                    <div><span class="font-normal">Performance:</span> <span class="font-thin" cms-block-field="care3_perf" cms-block-field-type="content" cms-block-field-title="Care3 Performance">Performance sprints &amp; load-time reviews</span>
+                                    </div>
+                                    <div><span class="font-normal">Support:</span> <span class="font-thin" cms-block-field="care3_support" cms-block-field-type="content" cms-block-field-title="Care3 Support">Priority support &amp; emergency incident handling</span>
+                                    </div>
+                                    <div><span class="font-normal">Consultation:</span> <span class="font-thin" cms-block-field="care3_consult" cms-block-field-type="content" cms-block-field-title="Care3 Consultation">Up to 4× 60 min strategic sessions per year</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plus services -->
+                        <aside class="bg-white/60 border border-gray-200 flex flex-col gap-4 mt-12 p-5 rounded-md md:p-6">
+                            <h2 class="text-xs uppercase tracking-[0.18em] font-semibold text-gray-700" cms-block-field="plus_title" cms-block-field-type="content" cms-block-field-title="Plus Services Title">
+          Plus services </h2>
+                            <ul class="space-y-4 text-sm text-gray-800">
+                                <li>
+                                    <strong class="block text-gray-900" cms-block-field="plus1_title" cms-block-field-type="content" cms-block-field-title="Plus 1 Title">Digital &amp; brand consulting</strong>
+                                    <span class="font-thin" cms-block-field="plus1_desc" cms-block-field-type="content" cms-block-field-title="Plus 1 Description" cms-block-field-control="richtext">
+              Ongoing strategic sessions on positioning, site evolution, content priorities and how your digital touchpoints work together. </span>
+                                </li>
+                                <li>
+                                    <strong class="block text-gray-900" cms-block-field="plus2_title" cms-block-field-type="content" cms-block-field-title="Plus 2 Title">Content &amp; copy support</strong>
+                                    <span class="font-thin" cms-block-field="plus2_desc" cms-block-field-type="content" cms-block-field-title="Plus 2 Description" cms-block-field-control="richtext">
+              Help refining key headlines, microcopy and page flows so the site reads clearly and feels aligned with your brand voice. </span>
+                                </li>
+                                <li>
+                                    <strong class="block text-gray-900" cms-block-field="plus3_title" cms-block-field-type="content" cms-block-field-title="Plus 3 Title">Photography &amp; art direction</strong>
+                                    <span class="font-thin" cms-block-field="plus3_desc" cms-block-field-type="content" cms-block-field-title="Plus 3 Description" cms-block-field-control="richtext">
+              Guidance on image selection, art direction and how to prepare assets for web so the visual language feels coherent and intentional. </span>
+                                </li>
+                                <li>
+                                    <strong class="block text-gray-900" cms-block-field="plus4_title" cms-block-field-type="content" cms-block-field-title="Plus 4 Title">Training &amp; handover sessions</strong>
+                                    <span class="font-thin" cms-block-field="plus4_desc" cms-block-field-type="content" cms-block-field-title="Plus 4 Description" cms-block-field-control="richtext">
+              Short, focused workshops to train your team on editing content, using blocks and keeping the site in good shape over time. </span>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <!-- /#main-content -->
+                </div>
+                <!-- /.grid -->
+            </section>
+        </main>         
+        <!-- What's included (kept, slightly tighter) -->
+        <!-- Hosting & Maintenance (rewritten to match your notes) -->
+        <!-- Add‑ons (unchanged, tightened heading) -->
+        <!-- Process (added “Design Review” step) -->
+        <!-- Premium, quiet CTA (replaces “Ready to build…” block) -->
+    </body>     
+</html>

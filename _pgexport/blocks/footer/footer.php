@@ -7,7 +7,8 @@
                     <?php if ( has_nav_menu( 'footer_one' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::init();
-                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}"><a class="duration-200 hover:text-black text-black text-sm transition-colors" {ATTRS}>{TITLE}</a>
+                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}">
+                                                                <a class="duration-200 hover:text-black text-black text-sm transition-colors" {ATTRS}>{TITLE}</a>
                                                             </li>';
                             wp_nav_menu( array(
                                 'container' => '',
@@ -22,7 +23,8 @@
                     <?php if ( has_nav_menu( 'footer_two' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::init();
-                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}"><a class="text-black hover:text-black transition-colors duration-200 text-sm" {ATTRS}>{TITLE}</a>
+                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}">
+                                                                <a class="text-black hover:text-black transition-colors duration-200 text-sm" {ATTRS}>{TITLE}</a>
                                                             </li>';
                             wp_nav_menu( array(
                                 'container' => '',
@@ -37,7 +39,8 @@
                     <?php if ( has_nav_menu( 'footer_three' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::init();
-                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}"><a class="text-black hover:text-black transition-colors duration-200 text-sm" {ATTRS}>{TITLE}</a>
+                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="{CLASSES}" id="{ID}">
+                                                                <a class="text-black hover:text-black transition-colors duration-200 text-sm" {ATTRS}>{TITLE}</a>
                                                             </li>';
                             wp_nav_menu( array(
                                 'container' => '',

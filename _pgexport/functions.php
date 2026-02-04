@@ -163,10 +163,10 @@ if ( ! function_exists( 'blackboard_by_zdc_enqueue_scripts' ) ) :
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'blackboard_by_zdc-tailwind' );
-    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.38', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.39', 'all');
 
     wp_deregister_style( 'blackboard_by_zdc-style' );
-    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.38', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.39', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 

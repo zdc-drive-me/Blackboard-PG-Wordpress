@@ -37,26 +37,26 @@
                 </div>
             </div>
             <!-- Hero intro + image -->
-            <div class="gap-4 grid items-center max-w-6xl mt-8 mx-auto md:gap-6 lg:gap-6 md:grid-cols-[minmax(0,2fr),minmax(0,1.4fr)]">
+            <div class="gap-4 grid items-center max-w-6xl mt-0 mx-auto md:gap-6 lg:gap-6 md:grid-cols-[minmax(0,2fr),minmax(0,1.4fr)] md:mt-8">
                 <div>
                     <h1 class="font-bold mb-3 text-4xl uppercase md:text-4xl"><?php echo PG_Blocks_v4::getAttribute( $args, 'hero_title' ) ?></h1>
-                    <p class="text-sm text-gray-800"><?php echo PG_Blocks_v4::getAttribute( $args, 'hero_text' ) ?></p>
+                    <p class="text-sm text-gray-800 mb-3 md:mb-0"><?php echo PG_Blocks_v4::getAttribute( $args, 'hero_text' ) ?></p>
                 </div>
-                <figure class="hidden overflow-hidden rounded-xs md:block">
+                <figure class="overflow-hidden rounded-xs">
                     <?php if ( !PG_Blocks_v4::getImageSVG( $args, 'hero_image', false) && PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ) : ?>
-                        <img src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'hero_image', 'alt', true); ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true)) : '') ?> h-60 object-cover w-full"/>
+                        <img src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'hero_image', 'alt', true); ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true)) : '') ?> h-70 object-cover w-full"/>
                     <?php endif; ?>
                     <?php if ( PG_Blocks_v4::getImageSVG( $args, 'hero_image', false) ) : ?>
-                        <?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'hero_image' ), array( 'class' => 'h-60 object-cover w-full' ) ) ?>
+                        <?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'hero_image' ), array( 'class' => 'h-70 object-cover w-full' ) ) ?>
                     <?php endif; ?>
                 </figure>
             </div>
             <!-- Website packages: Starting / Grow / Pro -->
             <div class="gap-6 grid grid-cols-1 mt-8 pb-0 md:grid-cols-3">
                 <!-- Starting -->
-                <div class="flex flex-col">
+                <div class="flex flex-col h-full">
                     <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_title' ) ?></span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
-                    <div class="space-y-2 text-sm">
+                    <div class="space-y-2 text-sm flex-grow">
                         <div>
                             <span class="font-normal"><?php _e( 'Price:&nbsp;', 'blackboard_by_zdc' ); ?></span>
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_price' ) ?></span>
@@ -108,11 +108,12 @@
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_care' ) ?></span>
                         </div>
                     </div>
+                    <a href="mailto:info.blackboard@zdcstudio.com?subject=Info%20Website%20Plans%20-%20Starting" class="bg-black font-semibold mt-4 px-4 py-2.5 rounded-xs text-center text-sm text-white transition-colors uppercase hover:bg-gray-800 md:capitalize md:font-normal"><?php _e( 'Request info', 'blackboard_by_zdc' ); ?></a>
                 </div>
                 <!-- Grow -->
-                <div class="flex flex-col">
+                <div class="flex flex-col h-full">
                     <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_title' ) ?></span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
-                    <div class="space-y-2 text-sm">
+                    <div class="space-y-2 text-sm flex-grow">
                         <div>
                             <span class="font-normal"><?php _e( 'Price:&nbsp;', 'blackboard_by_zdc' ); ?></span>
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_price' ) ?></span>
@@ -155,11 +156,12 @@
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_care' ) ?></span>
                         </div>
                     </div>
+                    <a href="mailto:info.blackboard@zdcstudio.com?subject=Info%20Website%20Plans%20-%20Grow" class="bg-black font-semibold mt-4 px-4 py-2.5 rounded-xs text-center text-sm text-white transition-colors uppercase hover:bg-gray-800 md:capitalize md:font-normal"><?php _e( 'Request info', 'blackboard_by_zdc' ); ?></a>
                 </div>
                 <!-- Pro -->
-                <div class="flex flex-col">
+                <div class="flex flex-col h-full">
                     <h3 class="flex font-semibold gap-2 items-center mb-4 text-xs uppercase"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_title' ) ?></span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
-                    <div class="space-y-2 text-sm">
+                    <div class="space-y-2 text-sm flex-grow">
                         <div>
                             <span class="font-normal"><?php _e( 'Price:&nbsp;', 'blackboard_by_zdc' ); ?></span>
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_price' ) ?></span>
@@ -202,6 +204,7 @@
                             <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_care' ) ?></span>
                         </div>
                     </div>
+                    <a href="mailto:info.blackboard@zdcstudio.com?subject=Info%20Website%20Plans%20-%20Pro" class="bg-black font-semibold mt-4 px-4 py-2.5 rounded-xs text-center text-sm text-white transition-colors uppercase hover:bg-gray-800 md:capitalize md:font-normal"><?php _e( 'Request Info', 'blackboard_by_zdc' ); ?></a>
                 </div>
             </div>
             <!-- Workflow -->
@@ -270,7 +273,7 @@
                 </div>
             </section>
             <!-- Hosting + Care intro -->
-            <div class="md:mt-10">
+            <div class="mt-10 md:mt-10">
                 <h5 class="font-bold mb-3 text-4xl uppercase md:text-4xl"><?php echo PG_Blocks_v4::getAttribute( $args, 'hosting_title' ) ?></h5>
                 <p class="mt-2 text-sm text-gray-800"><?php echo PG_Blocks_v4::getAttribute( $args, 'hosting_intro' ) ?></p>
             </div>

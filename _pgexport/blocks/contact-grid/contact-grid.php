@@ -32,7 +32,7 @@
             </section>
             <section class="border-t border-neutral-300 pt-2">
                 <h5 class="text-xs uppercase"><?php echo PG_Blocks_v4::getAttribute( $args, 'studio_email_label' ) ?></h5>
-                <p class="leading-tight mt-3 text-sm"> <a href="mailto:info@zdcstudio.com?subject=type%20the%20subject" class="!no-underline"><?php echo PG_Blocks_v4::getAttribute( $args, 'studio_email_text' ) ?></a> </p>
+                <p class="leading-tight mt-3 text-sm"> <a href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v4::getLinkUrl( $args, 'studio_email_text' ) ?>" class="!no-underline"><?php _e( 'info@zdcstudio.com', 'blackboard_by_zdc' ); ?></a> </p>
                 <div class="border-b border-stone-700 mt-3"></div>
             </section>
         </div>

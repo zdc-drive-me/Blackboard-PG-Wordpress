@@ -1,0 +1,8 @@
+/* Clean Denton font-face declaration */
+@font-face {
+  font-family: 'Denton';
+  src: url('Denton-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

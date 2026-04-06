@@ -11,7 +11,7 @@
         <div class="space-y-10 lg:col-start-7 lg:col-end-10 lg:row-start-1 lg:row-end-2">
             <section class="border-neutral-300 border-t col-end-8 col-start-6 pt-2 row-end-2 row-start-1">
                 <h5 class="text-xs uppercase"><?php echo PG_Blocks_v4::getAttribute( $args, 'phone_label' ) ?></h5>
-                <p class="leading-tight mt-3 text-sm"> <a href="tel:+442035828257" class="!no-underline underline-offset-2"><?php echo PG_Blocks_v4::getAttribute( $args, 'phone_text' ) ?></a> </p>
+                <p class="leading-tight mt-3 text-sm"> <a href="tel:+393456186298" class="!no-underline underline-offset-2"><?php echo PG_Blocks_v4::getAttribute( $args, 'phone_text' ) ?></a> </p>
             </section>
             <section class="border-neutral-300 border-t col-end-4 col-start-1 pt-2 row-end-2 row-start-1">
                 <h5 class="text-black text-xs uppercase"><?php echo PG_Blocks_v4::getAttribute( $args, 'email_label' ) ?></h5>

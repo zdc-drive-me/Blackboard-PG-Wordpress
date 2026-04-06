@@ -48,5 +48,5 @@
 'background_image' => array('id' => 0, 'url' => '', 'size' => '', 'svg' => '', 'alt' => null), 'background_color' => '', 'column_title_1' => 'Contact', 'column_title_2' => 'Links', 'column_title_3' => 'Language', 'logo_image' => array('id' => 0, 'url' => esc_url( get_template_directory_uri() . '/assets/images/blackboard.svg' ), 'size' => '', 'svg' => '', 'alt' => null), 'address' => '&copy; <span>2024</span> <span>zdc srl</span>. Via Arcangelo Corelli 34, 20134. Milano.', 'vat_number' => 'IT12874540961&nbsp;'
             ),
             'dynamic' => true,
-            'version' => '1.0.40'
+            'version' => '1.0.41'
         ) );

@@ -14,14 +14,7 @@
                         </div>
                         <div class="bg-custom_pink-200 mt-6 pb-2.5 pl-2.5 pr-2.5 pt-2.5">
                             <h1 class="font-bold mb-6 text-4xl"><?php echo PG_Blocks_v4::getAttribute( $args, 'h1_text' ) ?></h1>
-                            <h2 class="font-thin mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'intro_text' ) ?></h2>
                             <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'description_1' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'description_2' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'description_3' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'clients_text' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'description_4' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'location_text' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'contact_text' ) ?></p>
                         </div>
                     </div>
                 </section>

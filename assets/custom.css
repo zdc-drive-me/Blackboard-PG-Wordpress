@@ -93,3 +93,7 @@ html[lang^="it"] #menu-footer-menu-3 #menu-item-310 > a:hover {
   font-weight: 500;
   color: #000;
 }
+/* no inderline in portafolio block */
+body .wp-block-blackboard-by-zdc-portfolio a {
+  text-decoration: none !important;
+}

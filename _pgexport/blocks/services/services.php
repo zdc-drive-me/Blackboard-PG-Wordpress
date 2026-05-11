@@ -14,14 +14,7 @@
                         </div>
                         <div class="bg-custom_pink-200 mt-6 p-2.5">
                             <h1 class="font-bold mb-6 text-4xl"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_h1' ) ?></h1>
-                            <h2 class="font-thin mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_intro' ) ?></h2>
                             <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_p1' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_p2' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_p3' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_clients' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_parent' ) ?></p>
-                            <p class="mb-6 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_location' ) ?></p>
-                            <p class="mb-0 text-sm"><?php echo PG_Blocks_v4::getAttribute( $args, 'sidebar_contact_line' ) ?></p>
                         </div>
                     </div>
                 </section>

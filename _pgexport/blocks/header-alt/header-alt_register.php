@@ -20,5 +20,5 @@
 'logo' => array('id' => 0, 'url' => esc_url( get_template_directory_uri() . '/assets/images/blackboard.svg' ), 'size' => '', 'svg' => '', 'alt' => null)
             ),
             'dynamic' => true,
-            'version' => '1.0.49'
+            'version' => '1.0.54'
         ) );

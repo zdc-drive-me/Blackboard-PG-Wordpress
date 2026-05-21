@@ -1,0 +1,1 @@
+<h5 <?php if(empty($_GET['context']) || $_GET['context'] !== 'edit') echo get_block_wrapper_attributes( array('class' => "font-semibold mb-12 text-4xl", ) ); else echo 'data-wp-block-props="true"'; ?>><?php echo PG_Blocks_v4::getAttribute( $args, 'heading_text' ) ?></h5>

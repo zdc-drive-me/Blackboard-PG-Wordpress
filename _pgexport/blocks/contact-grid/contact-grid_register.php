@@ -88,5 +88,5 @@
 'contact_image_link' => array('post_id' => 0, 'url' => '', 'post_type' => '', 'title' => ''), 'contact_image' => array('id' => 0, 'url' => esc_url( get_template_directory_uri() . '/assets/images/contact.webp' ), 'size' => '', 'svg' => '', 'alt' => ''), 'address_label' => 'Office Address', 'address_line1' => 'Blackboard', 'address_line2' => 'By zdc studio', 'address_line3' => 'Via A Corelli 34', 'address_line4' => '20135 Milano', 'phone_label' => 'Telephone', 'phone_text' => '+39 34561862989', 'email_label' => 'contact us', 'email_text' => array('post_id' => 0, 'url' => 'mailto:blackboard@zdcstudio.com?subject=type%20the%20subject', 'post_type' => '', 'title' => ''), 'vat_label' => 'it vat number', 'vat_value' => 'IT12874540961', 'collab_label' => 'in collaboration with', 'link_url' => array('post_id' => 0, 'url' => 'https://www.zdcstudio.com', 'post_type' => '', 'title' => ''), 'link_label' => 'zdcstudio.com', 'studio_email_label' => 'email zdc studio', 'studio_email_text' => array('post_id' => 0, 'url' => 'mailto:info@zdcstudio.com?subject=type%20the%20subject', 'post_type' => '', 'title' => '')
             ),
             'dynamic' => true,
-            'version' => '1.0.54'
+            'version' => '1.0.102'
         ) );

@@ -97,3 +97,16 @@ html[lang^="it"] #menu-footer-menu-3 #menu-item-310 > a:hover {
 body .wp-block-blackboard-by-zdc-portfolio a {
   text-decoration: none !important;
 }
+
+/* No underline in Portfolio and Services block links */
+body .wp-block-blackboard-by-zdc-portfolio a,
+body .wp-block-blackboard-by-zdc-services a,
+body .wp-block-blackboard-by-zdc-portfolio a:hover,
+body .wp-block-blackboard-by-zdc-services a:hover,
+body .wp-block-blackboard-by-zdc-portfolio a:focus,
+body .wp-block-blackboard-by-zdc-services a:focus,
+body .wp-block-blackboard-by-zdc-portfolio a:visited,
+body .wp-block-blackboard-by-zdc-services a:visited {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+}

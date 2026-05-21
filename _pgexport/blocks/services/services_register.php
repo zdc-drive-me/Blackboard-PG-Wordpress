@@ -15,83 +15,155 @@
             'attributes' => array(
                 'about_heading' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'About <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
+                    'default' => 'how we think and build<span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
                 ),
-                'sidebar_h1' => array(
+                'heading_text' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Digital practice where direction takes form through structure and execution.'
+                    'default' => 'What gets built depends on the clarity of the decisions behind it.'
+                ),
+                'sidebar_block_1_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Structure'
                 ),
                 'sidebar_p1' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Blackboard is a part of the work developed at ZDC Studio,<b>where research becomes direction, and direction takes form.</b>We clarify, structure and build digital <b>systems</b>.<br><br>We work with studios and brands that need digital to hold,clear, fast and consistent, from initial structure to necessary rework (details in <a href="https://blackboard.zdcstudio.com/services/"><b class="!no-underline">services</b></a>).&nbsp;<br><br>Each project is guided by clear decisions and developed with precision, so that it remains coherent as it evolves.<br><br>Blackboard is the digital arm of <b><a href="https://zdcstudio.com"><b class="!no-underline">zdc.studio.</b></a></b><br><br>Based in Milan, working internationally.<br><br>Project enquiries and collaborations: <b><a href="mailto:blackboard@zdcstudio.com?subject=info"><b class="!no-underline">blackboard@zdcstudio.com</b></a></b><br><br><br>'
+                    'default' => 'Architecture, content, navigation and key decisions &#8212; including what to build, and what to leave out. Nothing is designed until the structure is clear.'
+                ),
+                'sidebar_block_2_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Design &amp; Development'
+                ),
+                'sidebar_p2' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Custom layout, type system and visual logic &#8212; no generic themes. Each component is built to the structure, with attention to performance, balance and precision.'
+                ),
+                'sidebar_block_3_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Evolution'
+                ),
+                'sidebar_p3' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Digital systems are not finished at launch. Content shifts, priorities change, pages are added. The structure is built to accommodate this &#8212; not to resist it.'
+                ),
+                'sidebar_block_4_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Care'
+                ),
+                'sidebar_p4' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Handover, documentation and &#8212; where needed &#8212; ongoing support. The system is yours. We make sure you can use it with confidence, and that someone is on hand when things need attention.'
                 ),
                 'top_label' => array(
                     'type' => array('string', 'null'),
                     'default' => 'Services <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
                 ),
-                'hero_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Websites plans'
-                ),
-                'hero_text' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'The shape of the site changes depending on the plan, but the foundation stays the same: a clear content structure, a custom visual system and a lean WordPress build.'
-                ),
                 'hero_image' => array(
                     'type' => array('object', 'null'),
-                    'default' => array('id' => 0, 'url' => 'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80', 'size' => '', 'svg' => '', 'alt' => 'Design and development workspace with sketches and laptop')
+                    'default' => array('id' => 0, 'url' => 'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80', 'size' => '', 'svg' => '', 'alt' => 'Design and development workspace')
+                ),
+                'plus1_block' => array(
+                    'type' => array('string', 'null'),
+                    'default' => ''
+                ),
+                'plus1_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'web design &amp; development'
+                ),
+                'plus1_desc' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Custom websites and digital systems, designed and developed from scratch with attention to structure, performance and long-term use.'
+                ),
+                'plus2_block' => array(
+                    'type' => array('string', 'null'),
+                    'default' => ''
+                ),
+                'plus2_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'digital &amp; brand consulting'
+                ),
+                'plus2_desc' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Offer, positioning, audience and direction for digital projects that need to be clarified before they are built or reworked.'
+                ),
+                'plus3_block' => array(
+                    'type' => array('string', 'null'),
+                    'default' => ''
+                ),
+                'plus3_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'content and copy support'
+                ),
+                'plus3_desc' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Messaging, website copy and content hierarchy for projects that need to explain themselves more clearly.'
+                ),
+                'plus4_block' => array(
+                    'type' => array('string', 'null'),
+                    'default' => ''
+                ),
+                'plus4_title' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'photography&nbsp; &amp; art direction<br>'
+                ),
+                'plus4_desc' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Image direction, photography briefs and visual guidance for web and digital use.'
+                ),
+                'plans_heading' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Project scales <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
+                ),
+                'plans_intro' => array(
+                    'type' => array('string', 'null'),
+                    'default' => 'Projects vary in scope. Each follows the same approach — structure first, then design and execution — adapted to scale and complexity.'
                 ),
                 'pkg1_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Starting'
+                    'default' => 'Foundation'
                 ),
                 'pkg1_price' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'From €3,200'
+                    'default' => '€3,200'
                 ),
                 'pkg1_desc' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Premium starter presence'
+                    'default' => 'A focused build with essential structure, custom design and core functionality.'
                 ),
                 'pkg1_pages' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Up to 5'
+                    'default' => 'Up to 6'
                 ),
                 'pkg1_design' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Custom layout &amp; style'
+                    'default' => 'Custom layout &amp; visual system'
                 ),
                 'pkg1_forms' => array(
                     'type' => array('string', 'null'),
-                    'default' => '1 standard form'
+                    'default' => '1 contact form'
                 ),
                 'pkg1_blog' => array(
                     'type' => array('string', 'null'),
-                    'default' => '—'
+                    'default' => '&ensp;—'
                 ),
                 'pkg1_newsletter' => array(
                     'type' => array('string', 'null'),
-                    'default' => '—'
+                    'default' => '&ensp;—'
                 ),
                 'pkg1_seo' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Basic / core SEO setup'
+                    'default' => 'Search-ready foundation'
                 ),
                 'pkg1_perf' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Core optimisations'
+                    'default' => 'Fast load, mobile-ready'
                 ),
                 'pkg1_analytics' => array(
                     'type' => array('string', 'null'),
-                    'default' => '—'
+                    'default' => '&ensp;—'
                 ),
                 'pkg1_access' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Best practices'
-                ),
-                'pkg1_care' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Host anywhere you like – add a maintenance plan and hosting is included.'
+                    'default' => 'Works for everyone'
                 ),
                 'pkg2_featured' => array(
                     'type' => array('string', 'null'),
@@ -99,15 +171,15 @@
                 ),
                 'pkg2_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Grow'
+                    'default' => 'Structured'
                 ),
                 'pkg2_price' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'From €4,100'
+                    'default' => '€4,100'
                 ),
                 'pkg2_desc' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Structured, content-driven site'
+                    'default' => 'A content-driven system with expanded pages, flexible layouts and integrated features.'
                 ),
                 'pkg2_pages' => array(
                     'type' => array('string', 'null'),
@@ -115,51 +187,47 @@
                 ),
                 'pkg2_design' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Content-driven page design &amp; layout'
+                    'default' => 'Content-driven layout, structured for growth'
                 ),
                 'pkg2_forms' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Advanced logic + blog-ready forms'
+                    'default' => 'Smart forms with routing logic'
                 ),
                 'pkg2_blog' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Setup + layout'
+                    'default' => 'Blog-ready, structured for content'
                 ),
                 'pkg2_newsletter' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Basic (Mailchimp)'
+                    'default' => 'Email signup integration'
                 ),
                 'pkg2_seo' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Thoughtful on-page SEO'
+                    'default' => 'On-page SEO, thoughtfully applied'
                 ),
                 'pkg2_perf' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Caching &amp; delivery'
+                    'default' => 'Optimised loading &amp; delivery'
                 ),
                 'pkg2_analytics' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'GA4'
+                    'default' => 'Traffic &amp; behaviour tracking'
                 ),
                 'pkg2_access' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'AA-focused'
-                ),
-                'pkg2_care' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Host anywhere you like – add a maintenance plan and hosting is included.'
+                    'default' => 'Inclusive by design'
                 ),
                 'pkg3_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Pro'
+                    'default' => 'Extended'
                 ),
                 'pkg3_price' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'From €6,300'
+                    'default' => '€6,300'
                 ),
                 'pkg3_desc' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Shopify store &amp; custom builds'
+                    'default' => 'A more complex system with custom builds, integrations and advanced performance.'
                 ),
                 'pkg3_pages' => array(
                     'type' => array('string', 'null'),
@@ -167,15 +235,15 @@
                 ),
                 'pkg3_design' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Bespoke theme (Kadence/Pinegrow)'
+                    'default' => 'Fully custom theme, built from scratch'
                 ),
                 'pkg3_forms' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Conditional forms &amp; integrations'
+                    'default' => 'Complex forms &amp; third-party connections'
                 ),
                 'pkg3_blog' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Extended features + SEO structure'
+                    'default' => 'Full editorial system + search structure'
                 ),
                 'pkg3_newsletter' => array(
                     'type' => array('string', 'null'),
@@ -183,284 +251,96 @@
                 ),
                 'pkg3_seo' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Structured data + technical SEO audit'
+                    'default' => 'Structured data + full technical audit'
                 ),
                 'pkg3_perf' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Full-stack + CDN configuration'
+                    'default' => 'Loads fast globally, fully optimised'
                 ),
                 'pkg3_analytics' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'GA4 + events'
+                    'default' => 'Detailed tracking &amp; event mapping'
                 ),
                 'pkg3_access' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'AA+ review'
+                    'default' => 'Rigorously tested'
                 ),
-                'pkg3_care' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Host anywhere you like – add a maintenance plan and hosting is included.'
+                'link' => array(
+                    'type' => array('object', 'null'),
+                    'default' => array('post_id' => 0, 'url' => '#', 'post_type' => '', 'title' => '')
                 ),
-                'workflow_title' => array(
+                'label' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'How we work - workflow <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
+                    'default' => 'How much does a website cost ?'
                 ),
-                'workflow_intro' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Every plan starts with a content and structure review, custom layouts and a lean, modern WordPress build.'
-                ),
-                'wf1_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '01 — Discovery'
-                ),
-                'wf1_tagline' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Intent, audience, constraints'
-                ),
-                'wf1_body' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'We map goals, content and guardrails, then set a lean, realistic scope that matches your resources and timeline.'
-                ),
-                'wf1_focus_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Detailed focus: Content &amp; structure'
-                ),
-                'wf1_focus_list' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Content and page mapping before design</li> <li>Navigation and hierarchy that match your project</li> <li>Wireframes / low-fidelity layouts where needed</li> <li>Simple content guidelines (tone, length, image ratios)</li> </ul>'
-                ),
-                'wf2_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '02 — Design'
-                ),
-                'wf2_tagline' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'System &amp; composition'
-                ),
-                'wf2_body' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Grid, type, components. Editorial clarity over noise, with layouts tuned to your photography and visual language.'
-                ),
-                'wf2_focus_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Detailed focus: Design &amp; front-end'
-                ),
-                'wf2_focus_list' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Custom layout and type system (no generic theme skins)</li> <li>Responsive grids, balanced margins and rhythm</li> <li>Gentle motion where it helps pacing (no circus)</li> <li>Design tuned to your existing brand assets and photography</li> </ul>'
-                ),
-                'wf3_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '03 — Build'
-                ),
-                'wf3_tagline' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'From prototype to live site'
-                ),
-                'wf3_body' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'We build a custom theme with the right tools for your project (Pinegrow, Kadence, block editor), keeping the stack lean and documented.'
-                ),
-                'wf3_focus_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Detailed focus: Build &amp; handover'
-                ),
-                'wf3_focus_list' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Modern block-based WordPress build (Kadence + custom blocks)</li> <li>Performance-minded decisions (caching, images, fonts)</li> <li>Basic SEO and analytics setup</li> </ul>'
-                ),
-                'wf4_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '04 — Launch &amp; care'
-                ),
-                'wf4_tagline' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Deploy, optimise, support'
-                ),
-                'wf4_body' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'We launch, run basic performance and analytics passes, and—if you want us on call—plug you into a care plan with hosting, updates and strategic time.'
-                ),
-                'wf4_focus_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Detailed focus: Launch &amp; support'
-                ),
-                'wf4_focus_list' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Handover session so you can update comfortably</li> <li>Short, practical documentation (no 40-page PDF)</li> <li>Optional ongoing care plans with hosting included</li> </ul>'
+                'start_project_email_link' => array(
+                    'type' => array('object', 'null'),
+                    'default' => array('post_id' => 0, 'url' => 'mailto:blackboard@zdcstudio.com?subject=Start%20a%20Project', 'post_type' => '', 'title' => '')
                 ),
                 'hosting_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'hosting + care'
+                    'default' => 'Hosting &amp; Care <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>'
                 ),
                 'hosting_intro' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Our maintenance plans include fast, secure managed WordPress hosting via our trusted partners SiteGround and Hostinger – so hosting, updates and monitoring all sit under one team. Hosting + Care are optional and work best when we migrate your site to our managed stack, so you can worry about one less thing.'
+                    'default' => 'Every WordPress site needs ongoing technical maintenance &#8212; updates, backups, security checks. The question is not whether, but who handles it.<br><br>You can manage your own hosting, provided it meets a minimum quality standard we agree on together. Or we manage everything under one of our care plans, which include hosting as part of the service.<br><br>Either way, the site remains yours.'
+                ),
+                'care_path_a' => array(
+                    'type' => array('string', 'null'),
+                    'default' => ''
                 ),
                 'care1_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Essential Care'
+                    'default' => 'Self-managed'
                 ),
-                'care1_price' => array(
+                'care1_tagline' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'From &euro;60 / month'
+                    'default' => 'You handle hosting. We remain available.'
                 ),
-                'care1_best' => array(
+                'care1_body' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Small brochure / portfolio sites'
+                    'default' => 'You host the site with your own provider. We will advise on minimum requirements — server environment, caching, SSL, backup policy — so the site continues to perform as built. Technical maintenance is your responsibility, though we remain available for agreed support when needed.'
                 ),
-                'care1_hosting' => array(
+                'care1_includes_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Included – managed on our EU-based SiteGround / Hostinger servers'
+                    'default' => 'What this includes'
                 ),
-                'care1_updates' => array(
+                'care1_includes' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Monthly WordPress core &amp; plugin updates'
+                    'default' => '<li>Hosting requirements brief at project handover</li> <li>One post-launch technical check (30 days)</li> <li>Documentation so your team can manage day-to-day updates</li> <li>Support available separately, on request</li>'
                 ),
-                'care1_backups' => array(
+                'care_path_b' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Daily backups with 30-day retention'
-                ),
-                'care1_security' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Firewall + malware scans'
-                ),
-                'care1_perf' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Core performance checks &amp; cache tuning'
-                ),
-                'care1_support' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Email support + 1 small content tweak / month'
-                ),
-                'care1_consult' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '1× 60 min strategic check-in per year'
-                ),
-                'care2_featured' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'true'
+                    'default' => ''
                 ),
                 'care2_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Growth Care'
+                    'default' => 'Managed care'
                 ),
                 'care2_price' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'From €130 / month'
+                    'default' => 'From €60 / month — hosting included'
                 ),
-                'care2_best' => array(
+                'care2_body' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Growing content sites &amp; active blogs'
+                    'default' => 'We manage the full technical layer of your site — hosting, updates, security, backups — on our managed infrastructure via SiteGround or Hostinger. You focus on the work. We ensure the system stays stable, secure and current.'
                 ),
-                'care2_hosting' => array(
+                'care2_includes_title' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Included – managed hosting + staging environment (SiteGround / Hostinger)'
+                    'default' => 'What this includes'
                 ),
-                'care2_updates' => array(
+                'care2_includes' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Weekly core, theme &amp; plugin updates'
+                    'default' => '<li>Managed hosting on EU-based servers (SiteGround / Hostinger)</li> <li>Regular WordPress core, theme &amp; plugin updates</li> <li>Daily backups with rolling retention</li> <li>Security monitoring, firewall &amp; malware checks</li> <li>Performance checks &amp; uptime monitoring</li> <li>2 hours / month content credit — page edits, text updates, image swaps (not new features)</li> <li>One strategic check-in per year</li>'
                 ),
-                'care2_backups' => array(
+                'care2_note' => array(
                     'type' => array('string', 'null'),
-                    'default' => 'Twice-daily backups with 60-day retention'
-                ),
-                'care2_security' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Advanced firewall, uptime monitoring &amp; alerts'
-                ),
-                'care2_perf' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Caching, image optimisation &amp; CDN guidance'
-                ),
-                'care2_support' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Email support + up to 3 small tasks / month'
-                ),
-                'care2_consult' => array(
-                    'type' => array('string', 'null'),
-                    'default' => '2× 60 min growth &amp; UX sessions per year'
-                ),
-                'care3_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Pro Care'
-                ),
-                'care3_price' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'From €220 / month'
-                ),
-                'care3_best' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'E-commerce &amp; mission-critical sites'
-                ),
-                'care3_hosting' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Included – high-availability hosting + CDN (SiteGround / Hostinger)'
-                ),
-                'care3_updates' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Weekly updates with compatibility checks'
-                ),
-                'care3_backups' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Frequent backups with 90-day retention'
-                ),
-                'care3_security' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Extended monitoring &amp; hardening, priority alerts'
-                ),
-                'care3_perf' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Performance sprints &amp; load-time reviews'
-                ),
-                'care3_support' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Priority support &amp; emergency incident handling'
-                ),
-                'care3_consult' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Up to 4× 60 min strategic sessions per year'
-                ),
-                'plus_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Plus services'
-                ),
-                'plus1_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Digital &amp; brand consulting'
-                ),
-                'plus1_desc' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Ongoing strategic sessions on positioning, site evolution, content priorities and how your digital touchpoints work together.'
-                ),
-                'plus2_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Content &amp; copy support'
-                ),
-                'plus2_desc' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Help refining key headlines, microcopy and page flows so the site reads clearly and feels aligned with your brand voice.'
-                ),
-                'plus3_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Photography &amp; art direction'
-                ),
-                'plus3_desc' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Guidance on image selection, art direction and how to prepare assets for web so the visual language feels coherent and intentional.'
-                ),
-                'plus4_title' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Training &amp; handover sessions'
-                ),
-                'plus4_desc' => array(
-                    'type' => array('string', 'null'),
-                    'default' => 'Short, focused workshops to train your team on editing content, using blocks and keeping the site in good shape over time.'
+                    'default' => 'Scope and pricing vary by project complexity. Full details available on request.'
                 )
             ),
             'example' => array(
-'about_heading' => 'About <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'sidebar_h1' => 'Digital practice where direction takes form through structure and execution.', 'sidebar_p1' => 'Blackboard is a part of the work developed at ZDC Studio,<b>where research becomes direction, and direction takes form.</b>We clarify, structure and build digital <b>systems</b>.<br><br>We work with studios and brands that need digital to hold,clear, fast and consistent, from initial structure to necessary rework (details in <a href="https://blackboard.zdcstudio.com/services/"><b class="!no-underline">services</b></a>).&nbsp;<br><br>Each project is guided by clear decisions and developed with precision, so that it remains coherent as it evolves.<br><br>Blackboard is the digital arm of <b><a href="https://zdcstudio.com"><b class="!no-underline">zdc.studio.</b></a></b><br><br>Based in Milan, working internationally.<br><br>Project enquiries and collaborations: <b><a href="mailto:blackboard@zdcstudio.com?subject=info"><b class="!no-underline">blackboard@zdcstudio.com</b></a></b><br><br><br>', 'top_label' => 'Services <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'hero_title' => 'Websites plans', 'hero_text' => 'The shape of the site changes depending on the plan, but the foundation stays the same: a clear content structure, a custom visual system and a lean WordPress build.', 'hero_image' => array('id' => 0, 'url' => 'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80', 'size' => '', 'svg' => '', 'alt' => 'Design and development workspace with sketches and laptop'), 'pkg1_title' => 'Starting', 'pkg1_price' => 'From €3,200', 'pkg1_desc' => 'Premium starter presence', 'pkg1_pages' => 'Up to 5', 'pkg1_design' => 'Custom layout &amp; style', 'pkg1_forms' => '1 standard form', 'pkg1_blog' => '—', 'pkg1_newsletter' => '—', 'pkg1_seo' => 'Basic / core SEO setup', 'pkg1_perf' => 'Core optimisations', 'pkg1_analytics' => '—', 'pkg1_access' => 'Best practices', 'pkg1_care' => 'Host anywhere you like – add a maintenance plan and hosting is included.', 'pkg2_featured' => '', 'pkg2_title' => 'Grow', 'pkg2_price' => 'From €4,100', 'pkg2_desc' => 'Structured, content-driven site', 'pkg2_pages' => 'Up to 10', 'pkg2_design' => 'Content-driven page design &amp; layout', 'pkg2_forms' => 'Advanced logic + blog-ready forms', 'pkg2_blog' => 'Setup + layout', 'pkg2_newsletter' => 'Basic (Mailchimp)', 'pkg2_seo' => 'Thoughtful on-page SEO', 'pkg2_perf' => 'Caching &amp; delivery', 'pkg2_analytics' => 'GA4', 'pkg2_access' => 'AA-focused', 'pkg2_care' => 'Host anywhere you like – add a maintenance plan and hosting is included.', 'pkg3_title' => 'Pro', 'pkg3_price' => 'From €6,300', 'pkg3_desc' => 'Shopify store &amp; custom builds', 'pkg3_pages' => '12+ or custom scope', 'pkg3_design' => 'Bespoke theme (Kadence/Pinegrow)', 'pkg3_forms' => 'Conditional forms &amp; integrations', 'pkg3_blog' => 'Extended features + SEO structure', 'pkg3_newsletter' => 'Automation-ready', 'pkg3_seo' => 'Structured data + technical SEO audit', 'pkg3_perf' => 'Full-stack + CDN configuration', 'pkg3_analytics' => 'GA4 + events', 'pkg3_access' => 'AA+ review', 'pkg3_care' => 'Host anywhere you like – add a maintenance plan and hosting is included.', 'workflow_title' => 'How we work - workflow <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'workflow_intro' => 'Every plan starts with a content and structure review, custom layouts and a lean, modern WordPress build.', 'wf1_title' => '01 — Discovery', 'wf1_tagline' => 'Intent, audience, constraints', 'wf1_body' => 'We map goals, content and guardrails, then set a lean, realistic scope that matches your resources and timeline.', 'wf1_focus_title' => 'Detailed focus: Content &amp; structure', 'wf1_focus_list' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Content and page mapping before design</li> <li>Navigation and hierarchy that match your project</li> <li>Wireframes / low-fidelity layouts where needed</li> <li>Simple content guidelines (tone, length, image ratios)</li> </ul>', 'wf2_title' => '02 — Design', 'wf2_tagline' => 'System &amp; composition', 'wf2_body' => 'Grid, type, components. Editorial clarity over noise, with layouts tuned to your photography and visual language.', 'wf2_focus_title' => 'Detailed focus: Design &amp; front-end', 'wf2_focus_list' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Custom layout and type system (no generic theme skins)</li> <li>Responsive grids, balanced margins and rhythm</li> <li>Gentle motion where it helps pacing (no circus)</li> <li>Design tuned to your existing brand assets and photography</li> </ul>', 'wf3_title' => '03 — Build', 'wf3_tagline' => 'From prototype to live site', 'wf3_body' => 'We build a custom theme with the right tools for your project (Pinegrow, Kadence, block editor), keeping the stack lean and documented.', 'wf3_focus_title' => 'Detailed focus: Build &amp; handover', 'wf3_focus_list' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Modern block-based WordPress build (Kadence + custom blocks)</li> <li>Performance-minded decisions (caching, images, fonts)</li> <li>Basic SEO and analytics setup</li> </ul>', 'wf4_title' => '04 — Launch &amp; care', 'wf4_tagline' => 'Deploy, optimise, support', 'wf4_body' => 'We launch, run basic performance and analytics passes, and—if you want us on call—plug you into a care plan with hosting, updates and strategic time.', 'wf4_focus_title' => 'Detailed focus: Launch &amp; support', 'wf4_focus_list' => '<ul class="list-disc pl-5 space-y-1 text-gray-800"> <li>Handover session so you can update comfortably</li> <li>Short, practical documentation (no 40-page PDF)</li> <li>Optional ongoing care plans with hosting included</li> </ul>', 'hosting_title' => 'hosting + care', 'hosting_intro' => 'Our maintenance plans include fast, secure managed WordPress hosting via our trusted partners SiteGround and Hostinger – so hosting, updates and monitoring all sit under one team. Hosting + Care are optional and work best when we migrate your site to our managed stack, so you can worry about one less thing.', 'care1_title' => 'Essential Care', 'care1_price' => 'From &euro;60 / month', 'care1_best' => 'Small brochure / portfolio sites', 'care1_hosting' => 'Included – managed on our EU-based SiteGround / Hostinger servers', 'care1_updates' => 'Monthly WordPress core &amp; plugin updates', 'care1_backups' => 'Daily backups with 30-day retention', 'care1_security' => 'Firewall + malware scans', 'care1_perf' => 'Core performance checks &amp; cache tuning', 'care1_support' => 'Email support + 1 small content tweak / month', 'care1_consult' => '1× 60 min strategic check-in per year', 'care2_featured' => '', 'care2_title' => 'Growth Care', 'care2_price' => 'From €130 / month', 'care2_best' => 'Growing content sites &amp; active blogs', 'care2_hosting' => 'Included – managed hosting + staging environment (SiteGround / Hostinger)', 'care2_updates' => 'Weekly core, theme &amp; plugin updates', 'care2_backups' => 'Twice-daily backups with 60-day retention', 'care2_security' => 'Advanced firewall, uptime monitoring &amp; alerts', 'care2_perf' => 'Caching, image optimisation &amp; CDN guidance', 'care2_support' => 'Email support + up to 3 small tasks / month', 'care2_consult' => '2× 60 min growth &amp; UX sessions per year', 'care3_title' => 'Pro Care', 'care3_price' => 'From €220 / month', 'care3_best' => 'E-commerce &amp; mission-critical sites', 'care3_hosting' => 'Included – high-availability hosting + CDN (SiteGround / Hostinger)', 'care3_updates' => 'Weekly updates with compatibility checks', 'care3_backups' => 'Frequent backups with 90-day retention', 'care3_security' => 'Extended monitoring &amp; hardening, priority alerts', 'care3_perf' => 'Performance sprints &amp; load-time reviews', 'care3_support' => 'Priority support &amp; emergency incident handling', 'care3_consult' => 'Up to 4× 60 min strategic sessions per year', 'plus_title' => 'Plus services', 'plus1_title' => 'Digital &amp; brand consulting', 'plus1_desc' => 'Ongoing strategic sessions on positioning, site evolution, content priorities and how your digital touchpoints work together.', 'plus2_title' => 'Content &amp; copy support', 'plus2_desc' => 'Help refining key headlines, microcopy and page flows so the site reads clearly and feels aligned with your brand voice.', 'plus3_title' => 'Photography &amp; art direction', 'plus3_desc' => 'Guidance on image selection, art direction and how to prepare assets for web so the visual language feels coherent and intentional.', 'plus4_title' => 'Training &amp; handover sessions', 'plus4_desc' => 'Short, focused workshops to train your team on editing content, using blocks and keeping the site in good shape over time.'
+'about_heading' => 'how we think and build<span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'heading_text' => 'What gets built depends on the clarity of the decisions behind it.', 'sidebar_block_1_title' => 'Structure', 'sidebar_p1' => 'Architecture, content, navigation and key decisions &#8212; including what to build, and what to leave out. Nothing is designed until the structure is clear.', 'sidebar_block_2_title' => 'Design &amp; Development', 'sidebar_p2' => 'Custom layout, type system and visual logic &#8212; no generic themes. Each component is built to the structure, with attention to performance, balance and precision.', 'sidebar_block_3_title' => 'Evolution', 'sidebar_p3' => 'Digital systems are not finished at launch. Content shifts, priorities change, pages are added. The structure is built to accommodate this &#8212; not to resist it.', 'sidebar_block_4_title' => 'Care', 'sidebar_p4' => 'Handover, documentation and &#8212; where needed &#8212; ongoing support. The system is yours. We make sure you can use it with confidence, and that someone is on hand when things need attention.', 'top_label' => 'Services <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'hero_image' => array('id' => 0, 'url' => 'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80', 'size' => '', 'svg' => '', 'alt' => 'Design and development workspace'), 'plus1_block' => '', 'plus1_title' => 'web design &amp; development', 'plus1_desc' => 'Custom websites and digital systems, designed and developed from scratch with attention to structure, performance and long-term use.', 'plus2_block' => '', 'plus2_title' => 'digital &amp; brand consulting', 'plus2_desc' => 'Offer, positioning, audience and direction for digital projects that need to be clarified before they are built or reworked.', 'plus3_block' => '', 'plus3_title' => 'content and copy support', 'plus3_desc' => 'Messaging, website copy and content hierarchy for projects that need to explain themselves more clearly.', 'plus4_block' => '', 'plus4_title' => 'photography&nbsp; &amp; art direction<br>', 'plus4_desc' => 'Image direction, photography briefs and visual guidance for web and digital use.', 'plans_heading' => 'Project scales <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'plans_intro' => 'Projects vary in scope. Each follows the same approach — structure first, then design and execution — adapted to scale and complexity.', 'pkg1_title' => 'Foundation', 'pkg1_price' => '€3,200', 'pkg1_desc' => 'A focused build with essential structure, custom design and core functionality.', 'pkg1_pages' => 'Up to 6', 'pkg1_design' => 'Custom layout &amp; visual system', 'pkg1_forms' => '1 contact form', 'pkg1_blog' => '&ensp;—', 'pkg1_newsletter' => '&ensp;—', 'pkg1_seo' => 'Search-ready foundation', 'pkg1_perf' => 'Fast load, mobile-ready', 'pkg1_analytics' => '&ensp;—', 'pkg1_access' => 'Works for everyone', 'pkg2_featured' => '', 'pkg2_title' => 'Structured', 'pkg2_price' => '€4,100', 'pkg2_desc' => 'A content-driven system with expanded pages, flexible layouts and integrated features.', 'pkg2_pages' => 'Up to 10', 'pkg2_design' => 'Content-driven layout, structured for growth', 'pkg2_forms' => 'Smart forms with routing logic', 'pkg2_blog' => 'Blog-ready, structured for content', 'pkg2_newsletter' => 'Email signup integration', 'pkg2_seo' => 'On-page SEO, thoughtfully applied', 'pkg2_perf' => 'Optimised loading &amp; delivery', 'pkg2_analytics' => 'Traffic &amp; behaviour tracking', 'pkg2_access' => 'Inclusive by design', 'pkg3_title' => 'Extended', 'pkg3_price' => '€6,300', 'pkg3_desc' => 'A more complex system with custom builds, integrations and advanced performance.', 'pkg3_pages' => '12+ or custom scope', 'pkg3_design' => 'Fully custom theme, built from scratch', 'pkg3_forms' => 'Complex forms &amp; third-party connections', 'pkg3_blog' => 'Full editorial system + search structure', 'pkg3_newsletter' => 'Automation-ready', 'pkg3_seo' => 'Structured data + full technical audit', 'pkg3_perf' => 'Loads fast globally, fully optimised', 'pkg3_analytics' => 'Detailed tracking &amp; event mapping', 'pkg3_access' => 'Rigorously tested', 'link' => array('post_id' => 0, 'url' => '#', 'post_type' => '', 'title' => ''), 'label' => 'How much does a website cost ?', 'start_project_email_link' => array('post_id' => 0, 'url' => 'mailto:blackboard@zdcstudio.com?subject=Start%20a%20Project', 'post_type' => '', 'title' => ''), 'hosting_title' => 'Hosting &amp; Care <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]"></span>', 'hosting_intro' => 'Every WordPress site needs ongoing technical maintenance &#8212; updates, backups, security checks. The question is not whether, but who handles it.<br><br>You can manage your own hosting, provided it meets a minimum quality standard we agree on together. Or we manage everything under one of our care plans, which include hosting as part of the service.<br><br>Either way, the site remains yours.', 'care_path_a' => '', 'care1_title' => 'Self-managed', 'care1_tagline' => 'You handle hosting. We remain available.', 'care1_body' => 'You host the site with your own provider. We will advise on minimum requirements — server environment, caching, SSL, backup policy — so the site continues to perform as built. Technical maintenance is your responsibility, though we remain available for agreed support when needed.', 'care1_includes_title' => 'What this includes', 'care1_includes' => '<li>Hosting requirements brief at project handover</li> <li>One post-launch technical check (30 days)</li> <li>Documentation so your team can manage day-to-day updates</li> <li>Support available separately, on request</li>', 'care_path_b' => '', 'care2_title' => 'Managed care', 'care2_price' => 'From €60 / month — hosting included', 'care2_body' => 'We manage the full technical layer of your site — hosting, updates, security, backups — on our managed infrastructure via SiteGround or Hostinger. You focus on the work. We ensure the system stays stable, secure and current.', 'care2_includes_title' => 'What this includes', 'care2_includes' => '<li>Managed hosting on EU-based servers (SiteGround / Hostinger)</li> <li>Regular WordPress core, theme &amp; plugin updates</li> <li>Daily backups with rolling retention</li> <li>Security monitoring, firewall &amp; malware checks</li> <li>Performance checks &amp; uptime monitoring</li> <li>2 hours / month content credit — page edits, text updates, image swaps (not new features)</li> <li>One strategic check-in per year</li>', 'care2_note' => 'Scope and pricing vary by project complexity. Full details available on request.'
             ),
             'dynamic' => true,
-            'version' => '1.0.54'
+            'version' => '1.0.103'
         ) );

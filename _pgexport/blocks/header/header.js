@@ -37,7 +37,7 @@
         },
         example: { attributes: { logo: {id: 0, url: (pg_project_data_blackboard_by_zdc ? pg_project_data_blackboard_by_zdc.url : '') + 'assets/images/blackboard.svg', size: '', svg: '', alt: 'Blackboard Digital Studio logo'} } },
         edit: function ( props ) {
-            const blockProps = useBlockProps({ className: 'md:sticky top-0 z-50' });
+            const blockProps = useBlockProps({ className: 'md:sticky top-0' });
             const setAttributes = props.setAttributes; 
             
             props.logo = useSelect(function( select ) {

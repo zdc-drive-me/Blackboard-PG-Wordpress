@@ -97,6 +97,10 @@
                         <span class="text-sm font-thin text-gray-700 leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'plus4_desc' ) ?></span>
                     </div>
                 </div>
+                <div class="border-black/10 border-t flex flex-col items-center mt-6 pt-5 space-y-4">
+                    <a class="font-thin leading-snug max-w-xl text-black text-xs" href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v4::getLinkUrl( $args, 'link' ) ?>"><?php echo PG_Blocks_v4::getAttribute( $args, 'label' ) ?></a>
+                    <a href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v4::getLinkUrl( $args, 'start_project_email_link' ) ?>" role="button" class="group bg-black flex flex-col font-normal gap-2 px-4 py-4 rounded-xs shrink-0 text-center text-sm text-white tracking-wide transition-colors w-full focus-visible:ring-2 focus-visible:ring-black/30 focus-visible:ring-offset-2 focus-visible:ring-offset-white/60 focus:outline-none hover:bg-[#a4ab13] md:w-auto"> <h3 class="font-thin leading-relaxed text-slate-200 text-xs md:max-w-lg group-hover:text-black"><?php _e( 'Each projects begins with a conversation', 'blackboard_by_zdc' ); ?> </h3> <h5 class="font-normal text-lg uppercase group-hover:text-black"> <?php _e( 'start a project', 'blackboard_by_zdc' ); ?></h5> </a>
+                </div>
             </section>
             <!-- ====================================================
                              BLOCK 3 — PROJECT SCALES (PRICING)
@@ -104,174 +108,6 @@
                              Language cleaned: no jargon, progressive complexity.
                              Descriptions rewritten for non-technical readers.
                         ==================================================== -->
-            <section class="mt-12" aria-labelledby="plans-heading">
-                <div class="mb-6">
-                    <h2 class="flex font-semibold gap-2 items-center text-xs uppercase min-w-0" id="plans-heading"><?php echo PG_Blocks_v4::getAttribute( $args, 'plans_heading' ) ?></h2>
-                    <p class="mt-2 text-sm text-gray-800 leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'plans_intro' ) ?></p>
-                </div>
-                <div class="gap-6 grid grid-cols-1 pb-0 md:grid-cols-3">
-                    <!-- FOUNDATION -->
-                    <div class="flex flex-col h-full">
-                        <div class="mb-4">
-                            <div class="inline-flex items-center bg-stone-900 text-white hover:bg-[#a4ab13] hover:text-white transition-colors duration-200 px-4 py-2 text-lg leading-none rounded-xs">
-                                <h3 class="font-semibold leading-none text-sm"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_title' ) ?></span> </h3>
-                            </div>
-                        </div>
-                        <div class="space-y-2 text-sm flex-grow">
-                            <div>
-                                <span class="font-normal"><?php _e( 'From&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_price' ) ?></span>
-                            </div>
-                            <p class="font-thin text-gray-700 leading-relaxed pb-1"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_desc' ) ?></p>
-                            <hr class="border-t border-black/10 my-2">
-                            <div>
-                                <span class="font-normal"><?php _e( 'Pages:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_pages' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Design:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_design' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Contact:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_forms' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Blog:', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_blog' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Newsletter:', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_newsletter' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Search visibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_seo' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Speed:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_perf' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Analytics:', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_analytics' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Accessibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg1_access' ) ?></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- STRUCTURED -->
-                    <!-- EXTENDED -->
-                    <div class="flex flex-col h-full">
-                        <div class="mb-4">
-                            <div class="inline-flex items-center bg-stone-900 text-white hover:bg-[#a4ab13] hover:text-white transition-colors duration-200 px-4 py-2 text-lg leading-none rounded-xs">
-                                <h3 class="font-semibold leading-none text-sm"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_title' ) ?></span> </h3>
-                            </div>
-                        </div>
-                        <div class="space-y-2 text-sm flex-grow">
-                            <div>
-                                <span class="font-normal"><?php _e( 'From&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_price' ) ?></span>
-                            </div>
-                            <p class="font-thin text-gray-700 leading-relaxed pb-1"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_desc' ) ?></p>
-                            <hr class="border-t border-black/10 my-2">
-                            <div>
-                                <span class="font-normal"><?php _e( 'Pages:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_pages' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Design:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_design' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Contact:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_forms' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Blog:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_blog' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Newsletter:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_newsletter' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Search visibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_seo' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Speed:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_perf' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Analytics:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_analytics' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Accessibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg2_access' ) ?></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col h-full">
-                        <div class="mb-4">
-                            <div class="inline-flex items-center bg-stone-900 text-white hover:bg-[#a4ab13] hover:text-white transition-colors duration-200 px-4 py-2 text-lg leading-none rounded-xs">
-                                <h3 class="font-semibold leading-none text-sm"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_title' ) ?></span> </h3>
-                            </div>
-                        </div>
-                        <div class="space-y-2 text-sm flex-grow">
-                            <div>
-                                <span class="font-normal"><?php _e( 'From&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_price' ) ?></span>
-                            </div>
-                            <p class="font-thin text-gray-700 leading-relaxed pb-1"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_desc' ) ?></p>
-                            <hr class="border-t border-black/10 my-2">
-                            <div>
-                                <span class="font-normal"><?php _e( 'Pages:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_pages' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Design:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_design' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Contact:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_forms' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Blog:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_blog' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Newsletter:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_newsletter' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Search visibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_seo' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Speed:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_perf' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Analytics:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_analytics' ) ?></span>
-                            </div>
-                            <div>
-                                <span class="font-normal"><?php _e( 'Accessibility:&nbsp;', 'blackboard_by_zdc' ); ?></span>
-                                <span class="font-thin"><?php echo PG_Blocks_v4::getAttribute( $args, 'pkg3_access' ) ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-black/10 border-t flex flex-col items-center mt-6 pt-5 space-y-4">
-                    <a class="font-thin leading-snug max-w-xl text-black text-xs" href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v4::getLinkUrl( $args, 'link' ) ?>"><?php echo PG_Blocks_v4::getAttribute( $args, 'label' ) ?></a>
-                    <a href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v4::getLinkUrl( $args, 'start_project_email_link' ) ?>" role="button" class="group bg-black flex flex-col font-normal gap-2 px-4 py-4 rounded-xs shrink-0 text-center text-sm text-white tracking-wide transition-colors w-full focus-visible:ring-2 focus-visible:ring-black/30 focus-visible:ring-offset-2 focus-visible:ring-offset-white/60 focus:outline-none hover:bg-[#a4ab13] md:w-auto"> <h3 class="font-thin leading-relaxed text-slate-200 text-xs md:max-w-lg group-hover:text-black"><?php _e( 'Each projects begins with a conversation', 'blackboard_by_zdc' ); ?> </h3> <h5 class="font-normal text-lg uppercase group-hover:text-black"> <?php _e( 'start a project', 'blackboard_by_zdc' ); ?></h5> </a>
-                </div>
-            </section>
             <!-- ====================================================
                              BLOCK 4 — HOSTING & CARE
                              Directly follows pricing — logically connected.
@@ -281,48 +117,6 @@
                              not pricing table style.
                              Human touchpoints made explicit (content credit).
                         ==================================================== -->
-            <section class="mt-12" aria-labelledby="care-heading">
-                <div class="mb-6">
-                    <h2 class="flex font-semibold gap-2 items-center text-xs uppercase min-w-0" id="care-heading"><?php echo PG_Blocks_v4::getAttribute( $args, 'hosting_title' ) ?></h2>
-                    <!-- 
-                                     Rewritten intro: establishes the logic of why care exists,
-                                     presents two paths clearly, avoids commodity language.
-                                -->
-                    <p class="mt-2 text-sm text-gray-800 max-w-xl leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'hosting_intro' ) ?></p>
-                </div>
-                <!-- TWO PATHS — workflow card style, not pricing table -->
-                <div class="space-y-6 text-sm text-gray-800">
-                    <!-- PATH A: Self-managed -->
-                    <div class="bg-white/60 border border-gray-200 p-4 rounded-xs md:p-5">
-                        <div class="flex items-baseline justify-between gap-2 flex-wrap">
-                            <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'care1_title' ) ?></span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
-                            <span class="text-[11px] text-gray-500 uppercase tracking-wide"><?php echo PG_Blocks_v4::getAttribute( $args, 'care1_tagline' ) ?></span>
-                        </div>
-                        <p class="mt-3 text-gray-800 leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'care1_body' ) ?></p>
-                        <div class="mt-4 pt-3 border-t border-black/10">
-                            <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-2"><?php echo PG_Blocks_v4::getAttribute( $args, 'care1_includes_title' ) ?></h4>
-                            <ul class="space-y-1 text-gray-700">
-                                <?php echo PG_Blocks_v4::getAttribute( $args, 'care1_includes' ) ?>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- PATH B: Managed Care -->
-                    <div class="bg-white/60 border border-gray-200 p-4 rounded-xs md:p-5">
-                        <div class="flex items-baseline justify-between gap-2 flex-wrap">
-                            <h3 class="text-xs uppercase font-semibold flex items-center gap-2"> <span><?php echo PG_Blocks_v4::getAttribute( $args, 'care2_title' ) ?></span> <span class="bg-black h-2 w-2 rounded-full relative -top-[1px]" aria-hidden="true"></span> </h3>
-                            <span class="text-[11px] text-gray-500 uppercase tracking-wide"><?php echo PG_Blocks_v4::getAttribute( $args, 'care2_price' ) ?></span>
-                        </div>
-                        <p class="mt-3 text-gray-800 leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'care2_body' ) ?></p>
-                        <div class="mt-4 pt-3 border-t border-black/10">
-                            <h4 class="text-[11px] uppercase font-semibold text-gray-700 mb-2"><?php echo PG_Blocks_v4::getAttribute( $args, 'care2_includes_title' ) ?></h4>
-                            <ul class="space-y-1 text-gray-700">
-                                <?php echo PG_Blocks_v4::getAttribute( $args, 'care2_includes' ) ?>
-                            </ul>
-                            <p class="mt-3 text-[11px] text-gray-500 leading-relaxed"><?php echo PG_Blocks_v4::getAttribute( $args, 'care2_note' ) ?></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- ====================================================
                              BLOCK 5 — HOW WE WORK
                              Moved to last position. Now functions as a closing,

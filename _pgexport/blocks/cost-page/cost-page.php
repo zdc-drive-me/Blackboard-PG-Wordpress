@@ -18,7 +18,7 @@
                SECTION 1 — HERO / INTRO
           ==================================================== -->
             <section aria-labelledby="hero-heading" class="md:mt-10 mt-8">
-                <h1 id="hero-heading" class="font-bold text-5xl md:text-6xl lg:text-7xl leading-none tracking-tight mb-6"><?php _e( 'How much does', 'blackboard_by_zdc' ); ?><br/><?php _e( 'a website cost?', 'blackboard_by_zdc' ); ?></h1>
+                <h1 id="hero-heading" class="font-bold leading-none mb-6 tracking-tight md:text-4xl lg:text-7xl"><?php _e( 'How much does&nbsp;', 'blackboard_by_zdc' ); ?><br><?php _e( 'a website cost?', 'blackboard_by_zdc' ); ?></h1>
                 <p class="font-light italic leading-relaxed max-w-xl mb-6 text-lg text-neutral-700"><?php _e( 'The price of a website is not defined by the number of pages alone. It depends on what the site needs to do, how it is structured, and how much it has to support over time.', 'blackboard_by_zdc' ); ?></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
                     <p class="font-light leading-relaxed text-base text-neutral-900"><?php _e( 'There is no single answer because "a website" can mean very different things. A simple online presence, a structured company website, an editorial system, an e-commerce platform and a custom digital product do not require the same level of work.', 'blackboard_by_zdc' ); ?></p>

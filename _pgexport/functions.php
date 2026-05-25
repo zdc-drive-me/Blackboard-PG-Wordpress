@@ -163,10 +163,10 @@ if ( ! function_exists( 'blackboard_by_zdc_enqueue_scripts' ) ) :
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'blackboard_by_zdc-tailwind' );
-    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.122', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '1.0.123', 'all');
 
     wp_deregister_style( 'blackboard_by_zdc-style' );
-    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.122', 'all');
+    wp_enqueue_style( 'blackboard_by_zdc-style', get_bloginfo('stylesheet_url'), [], '1.0.123', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
@@ -192,14 +192,14 @@ if ( ! function_exists('blackboard_by_zdc_blocks_init') ) :
 function blackboard_by_zdc_blocks_init() {
     // Register blocks. Don't edit anything between the following comments.
     /* Pinegrow generated Register Pinegrow Blocks Begin */
-    require_once 'blocks/contact-grid/contact-grid_register.php';
     require_once 'blocks/cost-page/cost-page_register.php';
-    require_once 'blocks/header-alt/header-alt_register.php';
     require_once 'blocks/header/header_register.php';
     require_once 'blocks/project/project_register.php';
     require_once 'blocks/portfolio/portfolio_register.php';
     require_once 'blocks/footer/footer_register.php';
+    require_once 'blocks/contact-grid/contact-grid_register.php';
     require_once 'blocks/privacy-policy-block/privacy-policy-block_register.php';
+    require_once 'blocks/header-alt/header-alt_register.php';
     require_once 'blocks/services/services_register.php';
 
     /* Pinegrow generated Register Pinegrow Blocks End */

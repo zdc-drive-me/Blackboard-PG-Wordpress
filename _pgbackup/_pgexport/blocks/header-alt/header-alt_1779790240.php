@@ -1,0 +1,5 @@
+<header <?php if(empty($_GET['context']) || $_GET['context'] !== 'edit') echo get_block_wrapper_attributes( array() ); else echo 'data-wp-block-props="true"'; ?>>
+    <nav class="border-b-1 border-black m-4 pb-4 md:m-6 md:pb-6">
+        <a href="<?php echo esc_url( home_url() ); ?>"> <?php if ( !PG_Blocks_v4::getImageSVG( $args, 'logo', false) && PG_Blocks_v4::getImageUrl( $args, 'logo', 'full' ) ) : ?><img src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'logo', 'full' ) ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'logo', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'logo', 'id', true)) : '') ?> block site-logo w-full" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'logo', 'alt', true); ?>"/><?php endif; ?><?php if ( PG_Blocks_v4::getImageSVG( $args, 'logo', false) ) : ?><?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'logo' ), array( 'class' => 'block site-logo w-full' ) ) ?><?php endif; ?> </a>
+    </nav>
+</header>

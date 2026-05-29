@@ -24,7 +24,7 @@
     const block = registerBlockType( 'blackboard-by-zdc/header-alt', {
         apiVersion: 2,
         title: 'Header – Alt',
-        description: 'Alternative site header without JS animation',
+        description: 'Alternative site header.',
         icon: 'block-default',
         category: 'blackboard_blocks',
         keywords: [],

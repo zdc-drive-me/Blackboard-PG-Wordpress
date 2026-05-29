@@ -35,5 +35,5 @@
 'show_divider' => '', 'video_url' => 'https://stream.mux.com/jd6YK1YimCu02u7Ebpu1xHp4c2iNESUbui00YGfGmsy7E.m3u8', 'client_name' => 'Dunes Studios', 'project_description' => 'This knitwear-focused fashion brand, known for its minimal and refined style, asked us to create a platform that reflects the lightness and clarity that define their design aesthetic.', 'services' => 'Web Design + Site Coding + Custom WordPress Theme'
             ),
             'dynamic' => true,
-            'version' => '1.0.123'
+            'version' => '1.0.134'
         ) );

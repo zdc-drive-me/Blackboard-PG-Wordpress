@@ -738,6 +738,9 @@
   .w-full {
     width: 100%;
   }
+  .w-screen {
+    width: 100vw;
+  }
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
@@ -1626,6 +1629,15 @@ body .wp-block-blackboard-by-zdc-portfolio a {
 body .wp-block-blackboard-by-zdc-portfolio a, body .wp-block-blackboard-by-zdc-services a, body .wp-block-blackboard-by-zdc-portfolio a:hover, body .wp-block-blackboard-by-zdc-services a:hover, body .wp-block-blackboard-by-zdc-portfolio a:focus, body .wp-block-blackboard-by-zdc-services a:focus, body .wp-block-blackboard-by-zdc-portfolio a:visited, body .wp-block-blackboard-by-zdc-services a:visited {
   text-decoration: none !important;
   text-decoration-line: none !important;
+}
+body.page-template-page-header-alt, body.page-template-page-header-alt .wp-site-blocks {
+  background-color: #f5f4f0;
+}
+body.page-template-page-header-alt header.wp-block-blackboard-by-zdc-header-alternative, body.page-template-page-header-alt header.wp-block-blackboard-by-zdc-header-alternative nav {
+  background-color: #f5f4f0;
+}
+body.page-template-page-header-alt .wp-block-blackboard-by-zdc-cost-page {
+  background-color: #f5f4f0 !important;
 }
 @layer base {
   input:where([type='text']),input:where(:not([type])),input:where([type='email']),input:where([type='url']),input:where([type='password']),input:where([type='number']),input:where([type='date']),input:where([type='datetime-local']),input:where([type='month']),input:where([type='search']),input:where([type='tel']),input:where([type='time']),input:where([type='week']),select:where([multiple]),textarea,select {

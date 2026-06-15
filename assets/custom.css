@@ -110,3 +110,24 @@ body .wp-block-blackboard-by-zdc-services a:visited {
   text-decoration: none !important;
   text-decoration-line: none !important;
 }
+
+/* --------------------------------------------------
+   Alternative Header Template Background
+   Applies to every page using the page-header-alt template
+-------------------------------------------------- */
+
+body.page-template-page-header-alt,
+body.page-template-page-header-alt .wp-site-blocks {
+  background-color: #f5f4f0;
+}
+
+/* Alternative header background */
+body.page-template-page-header-alt header.wp-block-blackboard-by-zdc-header-alternative,
+body.page-template-page-header-alt header.wp-block-blackboard-by-zdc-header-alternative nav {
+  background-color: #f5f4f0;
+}
+
+/* Main content block background on alt-header template pages */
+body.page-template-page-header-alt .wp-block-blackboard-by-zdc-cost-page {
+  background-color: #f5f4f0 !important;
+}

@@ -33,5 +33,5 @@
             ),
             'dynamic' => true,
             'has_inner_blocks' => true,
-            'version' => '1.0.134'
+            'version' => '1.0.150'
         ) );

@@ -64,10 +64,10 @@
             <div class="gap-4 grid items-center max-w-6xl mt-0 mx-auto md:gap-6 lg:gap-6 md:grid-cols-[minmax(0,2fr),minmax(0,1.4fr)] md:mt-8">
                 <figure class="overflow-hidden rounded-xs">
                     <?php if ( !PG_Blocks_v4::getImageSVG( $args, 'hero_image', false) && PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ) : ?>
-                        <img src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'hero_image', 'alt', true); ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true)) : '') ?> h-70 object-cover w-full"/>
+                        <img src="<?php echo PG_Blocks_v4::getImageUrl( $args, 'hero_image', 'full' ) ?>" alt="<?php echo PG_Blocks_v4::getImageField( $args, 'hero_image', 'alt', true); ?>" class="<?php echo (PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true) ? ('wp-image-' . PG_Blocks_v4::getImageField( $args, 'hero_image', 'id', true)) : '') ?> h-70 object-cover w-screen"/>
                     <?php endif; ?>
                     <?php if ( PG_Blocks_v4::getImageSVG( $args, 'hero_image', false) ) : ?>
-                        <?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'hero_image' ), array( 'class' => 'h-70 object-cover w-full' ) ) ?>
+                        <?php echo PG_Blocks_v4::mergeInlineSVGAttributes( PG_Blocks_v4::getImageSVG( $args, 'hero_image' ), array( 'class' => 'h-70 object-cover w-screen' ) ) ?>
                     <?php endif; ?>
                 </figure>
             </div>
